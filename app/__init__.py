@@ -11,7 +11,7 @@ def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config.update(
         SECRET_KEY=os.environ.get("SECRET_KEY", "dev-cambia-questa-chiave"),
-        SITE_URL=os.environ.get("SITE_URL", "https://fioriseddrack.it").rstrip("/"),
+        SITE_URL=os.environ.get("SITE_URL", "https://fioriseddrak.it").rstrip("/"),
         # Google tag (Ads/Analytics). Se vuoto, nessuno script di tracciamento e nessun banner cookie.
         GOOGLE_TAG_ID=os.environ.get("GOOGLE_TAG_ID", ""),
         # Etichetta conversione Google Ads per i clic su "Chiama" (es. AW-123/abcDEF).
