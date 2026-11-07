@@ -13,7 +13,7 @@ from xml.etree import ElementTree
 from app import create_app
 from app.routes import OLD_CATEGORIES, OLD_PAGES
 
-DOMAIN = "fioriseddrak.it"
+DOMAIN = os.environ.get("CUSTOM_DOMAIN", "fioriseddrak.it")  # vuoto = nessun CNAME
 OUT = Path(__file__).parent / "build"
 # Sottocartella quando il sito è servito da https://carosello75.github.io/larosadeldesertodiseddrack.it/
 # Con il dominio vero attivo, BASE_PATH resta vuoto.
@@ -85,7 +85,8 @@ def main():
         write(url, REDIRECT_PAGE.format(to=BASE + to, abs=site + to).encode())
 
     shutil.copytree(Path(app.static_folder), OUT / "static")
-    (OUT / "CNAME").write_text(DOMAIN + "\n")
+    if DOMAIN:
+        (OUT / "CNAME").write_text(DOMAIN + "\n")
     (OUT / ".nojekyll").write_text("")
     print(f"Pagine: {len(pages)}  redirect: {len(old)}  errori: {errors}  -> {OUT}")
     return 1 if errors else 0
