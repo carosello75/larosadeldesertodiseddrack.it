@@ -1,4 +1,4 @@
-/* La Rosa del Deserto di Seddrak – script unico, nessuna libreria */
+/* Piante e Fiori Roma di Seddrak – script unico, nessuna libreria */
 (function () {
   "use strict";
   var $ = function (s, r) { return (r || document).querySelector(s); };

@@ -1,11 +1,14 @@
-# La Rosa del Deserto di Seddrak – sito vetrina
+# Piante e Fiori Roma di Seddrak – sito vetrina
 
 Sito del fiorista **Youssef Seddrak**, due chioschi di fiori e piante a Roma:
 
 - **Largo Ferdinando Gregorovius** (angolo Via Macedonia), 00179 Roma – Appio Latino
 - **Largo Santi Martiri dell'Uganda**, 00147 Roma – Montagnola / Laurentina
 
-Dominio: **https://larosadeldesertodiseddrack.it**
+Dominio: **https://fioriseddrack.it** (consigliato anche fioriseddrak.it collegato allo stesso sito)
+
+Nome scelto per distinguersi dalle tante attività chiamate «La Rosa del Deserto»
+(bar-kebab a Roma in Via Prenestina, pizzerie in Veneto, centri estetici…) che causavano chiamate sbagliate.
 
 ## Come funziona
 
@@ -55,8 +58,8 @@ python freeze.py         # genera build/
 
 1. **Attivare FormSubmit**: alla prima prenotazione di prova arriva a `larosadeldesertoseddrak@gmail.com`
    una mail "Activate Form". Youssef deve cliccare **Activate**. Da quel momento le prenotazioni arrivano.
-2. **GitHub Pages**: *Settings → Pages → Source: GitHub Actions*, poi *Custom domain*:
-   `larosadeldesertodiseddrack.it` e spunta **Enforce HTTPS**.
+2. **GitHub Pages**: *Settings → Pages → Source: GitHub Actions*. Nel workflow `.github/workflows/deploy.yml` imposta `SITE_URL: https://fioriseddrack.it` e `BASE_PATH: ""`, poi *Custom domain*:
+   `fioriseddrack.it` e spunta **Enforce HTTPS**.
 3. **DNS del dominio** (dal pannello del registrar):
    - record `A` per `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - record `CNAME` per `www` → `carosello75.github.io`

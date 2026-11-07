@@ -6,8 +6,8 @@ e del profilo Google Business.
 """
 
 BUSINESS = {
-    "name": "La Rosa del Deserto di Seddrak",
-    "short_name": "La Rosa del Deserto",
+    "name": "Piante e Fiori Roma di Seddrak",
+    "short_name": "Fiori Seddrak",
     "tagline": "Fiori e piante a Roma",
     "owner": "Youssef Seddrak",
     "phone": "+393899962511",          # formato internazionale per i link tel:
@@ -33,8 +33,8 @@ BUSINESS = {
     # distinguere QUESTA attività dagli omonimi. Aggiungili appena creati.
     "same_as": [],
     "disambiguation": (
-        "Siamo un fiorista di Roma. Non abbiamo legami con ristoranti, pizzerie "
-        "o altre attività che si chiamano «La Rosa del Deserto»."
+        "Siamo un fiorista di Roma. Non abbiamo legami con ristoranti, bar, pizzerie, "
+        "kebab, centri estetici o altre attività che si chiamano «La Rosa del Deserto»."
     ),
 }
 
@@ -45,7 +45,7 @@ LOCATIONS = [
         "slug": "gregorovius",
         "path": "fioraio-largo-ferdinando-gregorovius",
         "name": "Chiosco di Largo Ferdinando Gregorovius",
-        "full_name": "La Rosa del Deserto di Seddrak – Fiori Gregorovius",
+        "full_name": "Piante e Fiori Roma di Seddrak – Largo Gregorovius",
         "street": "Largo Ferdinando Gregorovius",
         "street_note": "angolo Via Macedonia",
         "postal_code": "00179",
@@ -66,7 +66,7 @@ LOCATIONS = [
         "slug": "uganda",
         "path": "fioraio-largo-santi-martiri-uganda",
         "name": "Chiosco di Largo Santi Martiri dell'Uganda",
-        "full_name": "La Rosa del Deserto di Seddrak – Fiori Santi Martiri dell'Uganda",
+        "full_name": "Piante e Fiori Roma di Seddrak – Largo Santi Martiri dell'Uganda",
         "street": "Largo Santi Martiri dell'Uganda",
         "street_note": "",
         "postal_code": "00147",

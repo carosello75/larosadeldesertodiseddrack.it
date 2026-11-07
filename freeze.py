@@ -13,7 +13,7 @@ from xml.etree import ElementTree
 from app import create_app
 from app.routes import OLD_CATEGORIES, OLD_PAGES
 
-DOMAIN = "larosadeldesertodiseddrack.it"
+DOMAIN = "fioriseddrack.it"
 OUT = Path(__file__).parent / "build"
 # Sottocartella quando il sito è servito da https://carosello75.github.io/larosadeldesertodiseddrack.it/
 # Con il dominio vero attivo, BASE_PATH resta vuoto.

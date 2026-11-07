@@ -1,6 +1,6 @@
 {
   "name": "{{ BUSINESS.name }} – Fiori Roma",
-  "short_name": "Rosa del Deserto",
+  "short_name": "Fiori Seddrak",
   "description": "Prenota fiori e piante dai chioschi di {{ BUSINESS.owner }} a Roma.",
   "lang": "it",
   "start_url": "/?app=1",
