@@ -1,0 +1,79 @@
+{% macro kiosk_sign(loc, heading='h2') %}
+<article class="kiosk">
+  <div class="awning" aria-hidden="true"></div>
+  <div class="kiosk-body">
+    <{{ heading }} class="kiosk-name"><a href="/{{ loc.path }}/">{{ loc.street }}</a></{{ heading }}>
+    <p class="kiosk-zone">{{ loc.zone }}{% if loc.street_note %}, {{ loc.street_note }}{% endif %} – {{ loc.postal_code }} Roma</p>
+    <div class="kiosk-actions">
+      <a class="btn btn-rose" href="tel:{{ loc.phone }}" data-call="{{ loc.slug }}">Chiama {{ loc.phone_display }}</a>
+      <a class="btn btn-light" href="{{ loc.maps_url }}" rel="noopener" target="_blank">Indicazioni</a>
+      <a class="btn btn-light" href="https://wa.me/{{ BUSINESS.whatsapp }}?text={{ ('Ciao Youssef, ti scrivo per il chiosco di ' ~ loc.street ~ '.')|urlencode }}" rel="noopener" data-wa="{{ loc.slug }}">WhatsApp</a>
+    </div>
+  </div>
+</article>
+{% endmacro %}
+
+{% macro map_box(loc) %}
+<div class="map" data-embed="{{ loc.embed }}" data-title="Mappa: {{ loc.street }}">
+  <p><strong>{{ loc.street }}</strong><br>{{ loc.postal_code }} Roma</p>
+  <button class="btn btn-light" type="button">Mostra la mappa</button>
+  <p class="map-note">La mappa è di Google e si carica solo se la apri.</p>
+</div>
+{% endmacro %}
+
+{% macro service_tile(s, i) %}
+<a class="tile tile-{{ i }}" href="{{ url_for('main.service', slug=s.slug) }}">
+  {{ picture(s.cover, sizes='(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw') }}
+  <span class="tile-text"><span class="tile-title">{{ s.title }}</span><span class="tile-lead">{{ s.lead }}</span></span>
+</a>
+{% endmacro %}
+
+{% macro request_form(kind) %}
+<form class="form" id="richiesta" data-kind="{{ kind }}" data-wa="{{ BUSINESS.whatsapp }}" data-email="{{ BUSINESS.email }}" novalidate>
+  <p class="form-error" role="alert" hidden></p>
+  <div class="field-row">
+    <div class="field">
+      <label for="f-nome">Nome</label>
+      <input id="f-nome" name="nome" autocomplete="name" required>
+      <p class="err" hidden>Scrivi il tuo nome.</p>
+    </div>
+    <div class="field">
+      <label for="f-tel">Telefono <span class="opt">(per richiamarti)</span></label>
+      <input id="f-tel" name="telefono" type="tel" autocomplete="tel" inputmode="tel">
+    </div>
+  </div>
+  <div class="field-row">
+    <div class="field">
+      <label for="f-chiosco">Chiosco più vicino</label>
+      <select id="f-chiosco" name="chiosco">
+        <option value="">Indifferente</option>
+        {% for loc in LOCATIONS %}<option value="{{ loc.street }}" data-slug="{{ loc.slug }}">{{ loc.street }}</option>{% endfor %}
+      </select>
+    </div>
+    <div class="field">
+      <label for="f-servizio">{% if kind == 'preventivo' %}Cosa ti serve{% else %}Argomento{% endif %}</label>
+      <select id="f-servizio" name="servizio">
+        <option value="">Altro</option>
+        {% for s in SERVICES %}<option value="{{ s.quote_label }}" data-slug="{{ s.slug }}">{{ s.quote_label }}</option>{% endfor %}
+      </select>
+    </div>
+  </div>
+  {% if kind == 'preventivo' %}
+  <div class="field">
+    <label for="f-data">Data dell'evento o della consegna <span class="opt">(se c'è)</span></label>
+    <input id="f-data" name="data_evento" type="date">
+  </div>
+  {% endif %}
+  <div class="field">
+    <label for="f-msg">{% if kind == 'preventivo' %}Descrivi la tua idea: fiori, colori, budget{% else %}Messaggio{% endif %}</label>
+    <textarea id="f-msg" name="messaggio" rows="5" required maxlength="1500"></textarea>
+    <p class="err" hidden>Descrivi in poche parole cosa ti serve.</p>
+  </div>
+  <div class="form-send">
+    <button class="btn btn-rose btn-big" type="submit" value="whatsapp">Invia su WhatsApp</button>
+    <button class="btn btn-light btn-big" type="submit" value="email">Invia per email</button>
+  </div>
+  <p class="form-hint">Il messaggio si apre già scritto in WhatsApp o nella tua app email: controllalo e premi invia. Il sito non salva i tuoi dati.</p>
+</form>
+<noscript><p class="alt-contact">Scrivici su <a href="https://wa.me/{{ BUSINESS.whatsapp }}">WhatsApp</a> o a <a href="mailto:{{ BUSINESS.email }}">{{ BUSINESS.email }}</a>.</p></noscript>
+{% endmacro %}

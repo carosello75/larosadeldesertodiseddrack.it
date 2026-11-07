@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}Fioraio a {{ loc.street }}, {{ loc.zone }} Roma | {{ BUSINESS.short_name }}{% endblock %}
+{% block description %}Chiosco di fiori e piante a {{ loc.street }} ({{ loc.zone }}, {{ loc.postal_code }} Roma). Bouquet, composizioni, fiori per cerimonie e consegna a domicilio. Chiama {{ loc.phone_display }}.{% endblock %}
+{% block og_image %}{{ img_url(loc.photo, 1600) }}{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap page-hero-grid">
+    <div>
+      <p class="crumbs"><a href="{{ url_for('main.where') }}">Dove siamo</a></p>
+      <h1>Fioraio a {{ loc.street }}</h1>
+      <p class="hero-lead">Il chiosco di fiori e piante di {{ BUSINESS.owner }} in zona {{ loc.zone }}{% if loc.street_note %}, {{ loc.street_note }}{% endif %}.</p>
+      <div class="kiosks kiosks-one">{{ m.kiosk_sign(loc, 'h2') }}</div>
+    </div>
+    <figure class="page-hero-photo">{{ picture(loc.photo, sizes='(min-width: 900px) 45vw, 100vw', priority=True) }}</figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two">
+    <div class="prose">
+      <h2>Cosa trovi al chiosco</h2>
+      <ul>
+        <li>Fiori freschi ogni giorno: rose, gerbere, tulipani, girasoli, lilium.</li>
+        <li>Bouquet e composizioni preparati al momento.</li>
+        <li>Piante da interno ed esterno, orchidee, piante grasse.</li>
+        <li>Fiori per matrimoni, battesimi, lauree e funerali, su ordinazione.</li>
+        <li>Consegna a domicilio a {{ loc.nearby|join(', ') }} e dintorni.</li>
+      </ul>
+      <h2>Come arrivare</h2>
+      <p>{{ address_line(loc) }}{% if loc.street_note %}, {{ loc.street_note }}{% endif %}.</p>
+      {% if loc.hours %}
+      <h2>Orari</h2>
+      <ul class="hours">{% for d, o, c in loc.hours %}<li>{{ DAYS_IT.get(d, d) }}: {{ o }}–{{ c }}</li>{% endfor %}</ul>
+      {% else %}
+      <p>Per gli orari di oggi e per gli ordini chiama il <a href="tel:{{ loc.phone }}" data-call="{{ loc.slug }}">{{ loc.phone_display }}</a>.</p>
+      {% endif %}
+    </div>
+    <div>{{ m.map_box(loc) }}</div>
+  </div>
+</section>
+
+<section class="section section-sage">
+  <div class="wrap">
+    <div class="section-head"><h2>Servizi</h2></div>
+    <div class="tiles tiles-compact">
+      {% for s in SERVICES[:6] %}{{ m.service_tile(s, loop.index) }}{% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if posts %}
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Articoli su questa zona</h2></div>
+    <ul class="link-list">{% for p in posts %}<li><a href="{{ url_for('main.post', slug=p.slug) }}">{{ p.title }}</a></li>{% endfor %}</ul>
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  <div class="wrap other-loc">
+    <p>Sei più vicino all'altro chiosco? <a href="/{{ other.path }}/">{{ other.name }}</a>, zona {{ other.zone }}.</p>
+  </div>
+</section>
+{% endblock %}

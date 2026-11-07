@@ -1,0 +1,674 @@
+{
+ "chiosco-fiori-roma": {
+  "cat": "hero",
+  "alt": "Il chiosco di fiori e piante di Youssef Seddrak a Roma",
+  "w": 2048,
+  "h": 1536,
+  "files": {
+   "480": "chiosco-fiori-roma-480.webp",
+   "960": "chiosco-fiori-roma-960.webp",
+   "1600": "chiosco-fiori-roma-1600.webp"
+  }
+ },
+ "youssef-seddrak-cuore-di-rose": {
+  "cat": "hero",
+  "alt": "Youssef Seddrak con un cuore di rose rosse al chiosco",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "youssef-seddrak-cuore-di-rose-480.webp",
+   "960": "youssef-seddrak-cuore-di-rose-960.webp"
+  }
+ },
+ "rose-rosse-fresche": {
+  "cat": "hero",
+  "alt": "Rose rosse fresche",
+  "w": 1536,
+  "h": 2048,
+  "files": {
+   "480": "rose-rosse-fresche-480.webp",
+   "960": "rose-rosse-fresche-960.webp"
+  }
+ },
+ "chiosco-fiori-roma-sera": {
+  "cat": "hero",
+  "alt": "Il chiosco di fiori illuminato la sera",
+  "w": 1536,
+  "h": 1152,
+  "files": {
+   "480": "chiosco-fiori-roma-sera-480.webp",
+   "960": "chiosco-fiori-roma-sera-960.webp"
+  }
+ },
+ "chiosco-fiori-natale": {
+  "cat": "hero",
+  "alt": "Il chiosco allestito per Natale con stelle di Natale",
+  "w": 1536,
+  "h": 1152,
+  "files": {
+   "480": "chiosco-fiori-natale-480.webp",
+   "960": "chiosco-fiori-natale-960.webp"
+  }
+ },
+ "youssef-seddrak-fiorista": {
+  "cat": "youssef",
+  "alt": "Youssef Seddrak, fiorista a Roma",
+  "w": 2400,
+  "h": 1385,
+  "files": {
+   "480": "youssef-seddrak-fiorista-480.webp",
+   "960": "youssef-seddrak-fiorista-960.webp",
+   "1600": "youssef-seddrak-fiorista-1600.webp"
+  }
+ },
+ "youssef-seddrak-bouquet": {
+  "cat": "youssef",
+  "alt": "Youssef Seddrak con un bouquet di fiori misti",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "youssef-seddrak-bouquet-480.webp",
+   "960": "youssef-seddrak-bouquet-960.webp"
+  }
+ },
+ "youssef-seddrak-composizione": {
+  "cat": "youssef",
+  "alt": "Youssef prepara un cuore di rose",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "youssef-seddrak-composizione-480.webp",
+   "960": "youssef-seddrak-composizione-960.webp"
+  }
+ },
+ "bouquet-sposa-rose-avorio": {
+  "cat": "sposa",
+  "alt": "Bouquet da sposa di rose avorio e gypsophila",
+  "w": 1080,
+  "h": 1440,
+  "files": {
+   "480": "bouquet-sposa-rose-avorio-480.webp",
+   "960": "bouquet-sposa-rose-avorio-960.webp"
+  }
+ },
+ "bouquet-sposa-rose-lilla": {
+  "cat": "sposa",
+  "alt": "Bouquet da sposa di rose lilla e bianche",
+  "w": 1080,
+  "h": 1440,
+  "files": {
+   "480": "bouquet-sposa-rose-lilla-480.webp",
+   "960": "bouquet-sposa-rose-lilla-960.webp"
+  }
+ },
+ "bouquet-sposa-rose-bianche": {
+  "cat": "sposa",
+  "alt": "Bouquet da sposa di rose bianche",
+  "w": 1028,
+  "h": 1440,
+  "files": {
+   "480": "bouquet-sposa-rose-bianche-480.webp",
+   "960": "bouquet-sposa-rose-bianche-960.webp"
+  }
+ },
+ "bouquet-sposa-rose-fucsia": {
+  "cat": "sposa",
+  "alt": "Bouquet di rose fucsia e bianche",
+  "w": 1152,
+  "h": 2048,
+  "files": {
+   "480": "bouquet-sposa-rose-fucsia-480.webp",
+   "960": "bouquet-sposa-rose-fucsia-960.webp"
+  }
+ },
+ "bouquet-sposa-calle": {
+  "cat": "sposa",
+  "alt": "Bouquet da sposa di calle bianche",
+  "w": 1536,
+  "h": 2048,
+  "files": {
+   "480": "bouquet-sposa-calle-480.webp",
+   "960": "bouquet-sposa-calle-960.webp"
+  }
+ },
+ "bouquet-sposa-calle-gypsophila": {
+  "cat": "sposa",
+  "alt": "Bouquet di calle e fiori bianchi",
+  "w": 1114,
+  "h": 2048,
+  "files": {
+   "480": "bouquet-sposa-calle-gypsophila-480.webp",
+   "960": "bouquet-sposa-calle-gypsophila-960.webp"
+  }
+ },
+ "bouquet-tulipani-rosa": {
+  "cat": "sposa",
+  "alt": "Bouquet di tulipani rosa e fiori bianchi",
+  "w": 1014,
+  "h": 2048,
+  "files": {
+   "480": "bouquet-tulipani-rosa-480.webp",
+   "960": "bouquet-tulipani-rosa-960.webp"
+  }
+ },
+ "bouquet-sposa-rose-bianche-2": {
+  "cat": "sposa",
+  "alt": "Bouquet di rose bianche con pizzo",
+  "w": 1536,
+  "h": 2048,
+  "files": {
+   "480": "bouquet-sposa-rose-bianche-2-480.webp",
+   "960": "bouquet-sposa-rose-bianche-2-960.webp"
+  }
+ },
+ "boutonniere-sposo": {
+  "cat": "sposa",
+  "alt": "Boutonnière da sposo con rosa",
+  "w": 1152,
+  "h": 2048,
+  "files": {
+   "480": "boutonniere-sposo-480.webp",
+   "960": "boutonniere-sposo-960.webp"
+  }
+ },
+ "addobbo-floreale-chiesa": {
+  "cat": "matrimoni",
+  "alt": "Addobbo floreale in chiesa con gigli rosa",
+  "w": 1536,
+  "h": 2048,
+  "files": {
+   "480": "addobbo-floreale-chiesa-480.webp",
+   "960": "addobbo-floreale-chiesa-960.webp"
+  }
+ },
+ "composizione-gigli-rosa": {
+  "cat": "matrimoni",
+  "alt": "Composizione di gigli rosa e bianchi",
+  "w": 1536,
+  "h": 2048,
+  "files": {
+   "480": "composizione-gigli-rosa-480.webp",
+   "960": "composizione-gigli-rosa-960.webp"
+  }
+ },
+ "composizione-gigli-bianchi": {
+  "cat": "matrimoni",
+  "alt": "Composizione alta di gigli bianchi",
+  "w": 1536,
+  "h": 2048,
+  "files": {
+   "480": "composizione-gigli-bianchi-480.webp",
+   "960": "composizione-gigli-bianchi-960.webp"
+  }
+ },
+ "arco-palloncini-cuori": {
+  "cat": "matrimoni",
+  "alt": "Arco di palloncini rossi e bianchi",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "arco-palloncini-cuori-480.webp",
+   "960": "arco-palloncini-cuori-960.webp"
+  }
+ },
+ "centrotavola-rose-arancio": {
+  "cat": "matrimoni",
+  "alt": "Centrotavola di rose arancio e bianche",
+  "w": 1536,
+  "h": 2048,
+  "files": {
+   "480": "centrotavola-rose-arancio-480.webp",
+   "960": "centrotavola-rose-arancio-960.webp"
+  }
+ },
+ "corona-funebre-rose-rosse": {
+  "cat": "funerali",
+  "alt": "Corona funebre di rose rosse e gigli",
+  "w": 1223,
+  "h": 1536,
+  "files": {
+   "480": "corona-funebre-rose-rosse-480.webp",
+   "960": "corona-funebre-rose-rosse-960.webp"
+  }
+ },
+ "corona-funebre-garofani": {
+  "cat": "funerali",
+  "alt": "Corona funebre con garofani e nastro",
+  "w": 1080,
+  "h": 1773,
+  "files": {
+   "480": "corona-funebre-garofani-480.webp",
+   "960": "corona-funebre-garofani-960.webp"
+  }
+ },
+ "cuscino-funebre-girasoli": {
+  "cat": "funerali",
+  "alt": "Cuscino funebre con girasoli e rose",
+  "w": 1536,
+  "h": 2048,
+  "files": {
+   "480": "cuscino-funebre-girasoli-480.webp",
+   "960": "cuscino-funebre-girasoli-960.webp"
+  }
+ },
+ "corona-funebre-gerbere": {
+  "cat": "funerali",
+  "alt": "Corona funebre con gerbere colorate",
+  "w": 1536,
+  "h": 2048,
+  "files": {
+   "480": "corona-funebre-gerbere-480.webp",
+   "960": "corona-funebre-gerbere-960.webp"
+  }
+ },
+ "cuscino-funebre-arancio": {
+  "cat": "funerali",
+  "alt": "Cuscino funebre arancio e rosso",
+  "w": 1228,
+  "h": 2048,
+  "files": {
+   "480": "cuscino-funebre-arancio-480.webp",
+   "960": "cuscino-funebre-arancio-960.webp"
+  }
+ },
+ "cuscino-funebre-gigli-rose": {
+  "cat": "funerali",
+  "alt": "Cuscino di gigli e rose rosse",
+  "w": 2048,
+  "h": 1536,
+  "files": {
+   "480": "cuscino-funebre-gigli-rose-480.webp",
+   "960": "cuscino-funebre-gigli-rose-960.webp",
+   "1600": "cuscino-funebre-gigli-rose-1600.webp"
+  }
+ },
+ "cuore-funebre-rose-bianche": {
+  "cat": "funerali",
+  "alt": "Cuore di rose bianche",
+  "w": 1536,
+  "h": 1536,
+  "files": {
+   "480": "cuore-funebre-rose-bianche-480.webp",
+   "960": "cuore-funebre-rose-bianche-960.webp"
+  }
+ },
+ "cuscino-funebre-rosa": {
+  "cat": "funerali",
+  "alt": "Cuscino funebre con gigli e gerbere rosa",
+  "w": 1440,
+  "h": 1080,
+  "files": {
+   "480": "cuscino-funebre-rosa-480.webp",
+   "960": "cuscino-funebre-rosa-960.webp"
+  }
+ },
+ "corona-alloro-laurea": {
+  "cat": "laurea",
+  "alt": "Corona di alloro per laurea con nastro rosso",
+  "w": 1121,
+  "h": 1773,
+  "files": {
+   "480": "corona-alloro-laurea-480.webp",
+   "960": "corona-alloro-laurea-960.webp"
+  }
+ },
+ "corona-alloro-nastri": {
+  "cat": "laurea",
+  "alt": "Corona di alloro con nastri rossi",
+  "w": 1174,
+  "h": 1536,
+  "files": {
+   "480": "corona-alloro-nastri-480.webp",
+   "960": "corona-alloro-nastri-960.webp"
+  }
+ },
+ "corona-alloro-fiori": {
+  "cat": "laurea",
+  "alt": "Corona di alloro con fiori",
+  "w": 956,
+  "h": 1024,
+  "files": {
+   "480": "corona-alloro-fiori-480.webp"
+  }
+ },
+ "corona-alloro-grande": {
+  "cat": "laurea",
+  "alt": "Corona di alloro",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "corona-alloro-grande-480.webp",
+   "960": "corona-alloro-grande-960.webp"
+  }
+ },
+ "mazzo-gerbere-gigli": {
+  "cat": "bouquet",
+  "alt": "Mazzo di gerbere, gigli e anemoni",
+  "w": 1511,
+  "h": 731,
+  "files": {
+   "480": "mazzo-gerbere-gigli-480.webp",
+   "960": "mazzo-gerbere-gigli-960.webp"
+  }
+ },
+ "bouquet-rose-arancio-statice": {
+  "cat": "bouquet",
+  "alt": "Bouquet di rose arancio e statice viola",
+  "w": 1536,
+  "h": 2048,
+  "files": {
+   "480": "bouquet-rose-arancio-statice-480.webp",
+   "960": "bouquet-rose-arancio-statice-960.webp"
+  }
+ },
+ "bouquet-rose-rosse": {
+  "cat": "bouquet",
+  "alt": "Bouquet di rose rosse",
+  "w": 1014,
+  "h": 2048,
+  "files": {
+   "480": "bouquet-rose-rosse-480.webp",
+   "960": "bouquet-rose-rosse-960.webp"
+  }
+ },
+ "composizione-cesto-lilla": {
+  "cat": "bouquet",
+  "alt": "Composizione in cesto con fiori lilla",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "composizione-cesto-lilla-480.webp",
+   "960": "composizione-cesto-lilla-960.webp"
+  }
+ },
+ "bouquet-gerbere-arancio": {
+  "cat": "bouquet",
+  "alt": "Bouquet di gerbere arancio e lisianthus",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "bouquet-gerbere-arancio-480.webp",
+   "960": "bouquet-gerbere-arancio-960.webp"
+  }
+ },
+ "bouquet-misti-colorati": {
+  "cat": "bouquet",
+  "alt": "Bouquet di fiori misti colorati",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "bouquet-misti-colorati-480.webp",
+   "960": "bouquet-misti-colorati-960.webp"
+  }
+ },
+ "rose-blu-bouquet": {
+  "cat": "bouquet",
+  "alt": "Bouquet di rose blu",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "rose-blu-bouquet-480.webp",
+   "960": "rose-blu-bouquet-960.webp"
+  }
+ },
+ "mazzo-rose-rosse-carta": {
+  "cat": "bouquet",
+  "alt": "Mazzo di rose rosse in carta",
+  "w": 1350,
+  "h": 2400,
+  "files": {
+   "480": "mazzo-rose-rosse-carta-480.webp",
+   "960": "mazzo-rose-rosse-carta-960.webp"
+  }
+ },
+ "composizione-gerbere-gialle": {
+  "cat": "bouquet",
+  "alt": "Composizione di gerbere gialle e arancio",
+  "w": 1760,
+  "h": 2370,
+  "files": {
+   "480": "composizione-gerbere-gialle-480.webp",
+   "960": "composizione-gerbere-gialle-960.webp",
+   "1600": "composizione-gerbere-gialle-1600.webp"
+  }
+ },
+ "composizione-cappelliera": {
+  "cat": "bouquet",
+  "alt": "Composizione in cappelliera con fiori bianchi e gialli",
+  "w": 1536,
+  "h": 2048,
+  "files": {
+   "480": "composizione-cappelliera-480.webp",
+   "960": "composizione-cappelliera-960.webp"
+  }
+ },
+ "cesto-fiori-misti": {
+  "cat": "bouquet",
+  "alt": "Cesto di fiori misti con fiocco rosa",
+  "w": 1536,
+  "h": 2048,
+  "files": {
+   "480": "cesto-fiori-misti-480.webp",
+   "960": "cesto-fiori-misti-960.webp"
+  }
+ },
+ "girasoli": {
+  "cat": "bouquet",
+  "alt": "Girasoli freschi",
+  "w": 1536,
+  "h": 1152,
+  "files": {
+   "480": "girasoli-480.webp",
+   "960": "girasoli-960.webp"
+  }
+ },
+ "tulipani": {
+  "cat": "bouquet",
+  "alt": "Tulipani freschi",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "tulipani-480.webp",
+   "960": "tulipani-960.webp"
+  }
+ },
+ "rose-colorate": {
+  "cat": "bouquet",
+  "alt": "Rose di vari colori",
+  "w": 1152,
+  "h": 2048,
+  "files": {
+   "480": "rose-colorate-480.webp",
+   "960": "rose-colorate-960.webp"
+  }
+ },
+ "orchidea-phalaenopsis": {
+  "cat": "piante",
+  "alt": "Orchidea in vaso",
+  "w": 864,
+  "h": 1536,
+  "files": {
+   "480": "orchidea-phalaenopsis-480.webp"
+  }
+ },
+ "stelle-di-natale": {
+  "cat": "piante",
+  "alt": "Stelle di Natale rosse e bianche",
+  "w": 1536,
+  "h": 1152,
+  "files": {
+   "480": "stelle-di-natale-480.webp",
+   "960": "stelle-di-natale-960.webp"
+  }
+ },
+ "stella-di-natale-bianca": {
+  "cat": "piante",
+  "alt": "Stella di Natale bianca confezionata",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "stella-di-natale-bianca-480.webp",
+   "960": "stella-di-natale-bianca-960.webp"
+  }
+ },
+ "composizioni-piante-fiori": {
+  "cat": "piante",
+  "alt": "Composizioni di fiori al chiosco",
+  "w": 1014,
+  "h": 2048,
+  "files": {
+   "480": "composizioni-piante-fiori-480.webp",
+   "960": "composizioni-piante-fiori-960.webp"
+  }
+ },
+ "albero-natale-fiori": {
+  "cat": "natale",
+  "alt": "Albero di Natale decorato con mele e fiori",
+  "w": 1121,
+  "h": 1773,
+  "files": {
+   "480": "albero-natale-fiori-480.webp",
+   "960": "albero-natale-fiori-960.webp"
+  }
+ },
+ "composizioni-natalizie": {
+  "cat": "natale",
+  "alt": "Composizioni natalizie rosse",
+  "w": 1536,
+  "h": 1152,
+  "files": {
+   "480": "composizioni-natalizie-480.webp",
+   "960": "composizioni-natalizie-960.webp"
+  }
+ },
+ "centrotavola-natale-mele": {
+  "cat": "natale",
+  "alt": "Centrotavola natalizio con mele",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "centrotavola-natale-mele-480.webp",
+   "960": "centrotavola-natale-mele-960.webp"
+  }
+ },
+ "candela-di-natale": {
+  "cat": "natale",
+  "alt": "Composizione natalizia con candela rossa",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "candela-di-natale-480.webp",
+   "960": "candela-di-natale-960.webp"
+  }
+ },
+ "composizione-natale-agrumi": {
+  "cat": "natale",
+  "alt": "Composizione natalizia con agrumi e pigne",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "composizione-natale-agrumi-480.webp",
+   "960": "composizione-natale-agrumi-960.webp"
+  }
+ },
+ "composizione-natale-mele": {
+  "cat": "natale",
+  "alt": "Composizione natalizia con mele",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "composizione-natale-mele-480.webp",
+   "960": "composizione-natale-mele-960.webp"
+  }
+ },
+ "abete-natale": {
+  "cat": "natale",
+  "alt": "Abete di Natale decorato",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "abete-natale-480.webp",
+   "960": "abete-natale-960.webp"
+  }
+ },
+ "coroncina-natale": {
+  "cat": "natale",
+  "alt": "Coroncina natalizia",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "coroncina-natale-480.webp",
+   "960": "coroncina-natale-960.webp"
+  }
+ },
+ "cuore-di-rose-in-scatola": {
+  "cat": "sanvalentino",
+  "alt": "Cuore di rose rosse in scatola",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "cuore-di-rose-in-scatola-480.webp",
+   "960": "cuore-di-rose-in-scatola-960.webp"
+  }
+ },
+ "cuore-di-rose-rosse": {
+  "cat": "sanvalentino",
+  "alt": "Cuore di rose rosse",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "cuore-di-rose-rosse-480.webp",
+   "960": "cuore-di-rose-rosse-960.webp"
+  }
+ },
+ "cuore-rose-fiocco": {
+  "cat": "sanvalentino",
+  "alt": "Cuore di rose con fiocco",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "cuore-rose-fiocco-480.webp",
+   "960": "cuore-rose-fiocco-960.webp"
+  }
+ },
+ "orsetto-di-rose": {
+  "cat": "sanvalentino",
+  "alt": "Orsetto di rose rosse San Valentino",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "orsetto-di-rose-480.webp",
+   "960": "orsetto-di-rose-960.webp"
+  }
+ },
+ "cuore-rose-cioccolatini": {
+  "cat": "sanvalentino",
+  "alt": "Cuore di rose e cioccolatini",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "cuore-rose-cioccolatini-480.webp",
+   "960": "cuore-rose-cioccolatini-960.webp"
+  }
+ },
+ "scatola-rose-cioccolatini": {
+  "cat": "sanvalentino",
+  "alt": "Scatola di rose e cioccolatini",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "scatola-rose-cioccolatini-480.webp",
+   "960": "scatola-rose-cioccolatini-960.webp"
+  }
+ },
+ "cesto-san-valentino-peluche": {
+  "cat": "sanvalentino",
+  "alt": "Cesto di San Valentino con peluche",
+  "w": 1152,
+  "h": 1536,
+  "files": {
+   "480": "cesto-san-valentino-peluche-480.webp",
+   "960": "cesto-san-valentino-peluche-960.webp"
+  }
+ }
+}

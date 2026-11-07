@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Pagina non trovata | {{ BUSINESS.short_name }}{% endblock %}
+{% block content %}
+<section class="section"><div class="wrap narrow prose">
+<h1>Questa pagina non esiste più</h1>
+<p>Il sito è stato rinnovato e alcuni indirizzi sono cambiati. Da qui trovi tutto:</p>
+<p><a class="btn btn-rose" href="{{ url_for('main.home') }}">Vai alla home</a> <a class="btn btn-light" href="{{ url_for('main.services') }}">Vedi i servizi</a> <a class="btn btn-light" href="tel:{{ BUSINESS.phone }}">Chiama {{ BUSINESS.phone_display }}</a></p>
+</div></section>
+{% endblock %}

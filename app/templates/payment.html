@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Pagamento online | {{ BUSINESS.short_name }}{% endblock %}
+{% block head %}<meta name="robots" content="noindex">{% endblock %}
+{% block content %}
+<section class="page-hero page-hero-plain">
+  <div class="wrap narrow">
+    <h1>Pagamento online</h1>
+    <p class="hero-lead">Hai già concordato l'ordine e il prezzo con noi? Qui trovi i modi per pagare: {% if BUSINESS.iban %}bonifico, {% endif %}PayPal o carta.</p>
+  </div>
+</section>
+<section class="section section-tight">
+  <div class="wrap narrow pay">
+    <ol class="steps">
+      <li><a href="{{ url_for('main.booking') }}">Prenota</a> o chiamaci per concordare fiori e prezzo.</li>
+      <li>Paga l'importo concordato con uno dei due metodi qui sotto.</li>
+      <li>Mandaci la conferma su WhatsApp con il tuo nome: prepariamo l'ordine.</li>
+    </ol>
+    {% include "_payment_methods.html" %}
+  </div>
+</section>
+<section class="section section-tight">
+  <div class="wrap narrow pay">
+    <ol class="steps">
+      <li><a href="{{ url_for('main.booking') }}">Prenota</a> o chiamaci per concordare fiori e prezzo.</li>
+      <li>Paga l'importo concordato con uno dei due metodi qui sotto.</li>
+      <li>Mandaci la conferma su WhatsApp con il tuo nome: prepariamo l'ordine.</li>
+    </ol>
+    <p><a class="btn btn-rose btn-big" href="{{ BUSINESS.paypal_url }}" rel="noopener" target="_blank">Paga con PayPal</a></p>
+    <h2 class="h-small">Paga con carta</h2>
+    <div id="paypal-container-{{ BUSINESS.paypal_hosted_button_id }}" class="paypal-box" data-client="{{ BUSINESS.paypal_client_id }}" data-button="{{ BUSINESS.paypal_hosted_button_id }}">
+      <button class="btn btn-light" type="button" id="load-paypal">Mostra il pagamento con carta</button>
+    </div>
+  </div>
+</section>
+{% endblock %}

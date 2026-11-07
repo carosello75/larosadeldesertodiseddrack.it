@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}Chiedi un preventivo per fiori e addobbi | {{ BUSINESS.short_name }}, Roma{% endblock %}
+{% block description %}Preventivo gratuito per bouquet da sposa, addobbi matrimoniali, fiori per funerali, corone di laurea e composizioni a Roma. Risposta di solito in giornata.{% endblock %}
+{% block content %}
+<section class="page-hero page-hero-plain">
+  <div class="wrap narrow">
+    <h1>Chiedi un preventivo</h1>
+    <p class="hero-lead">Descrivi cosa ti serve. Il messaggio arriva a Youssef su WhatsApp o per email e lui ti risponde con prezzo e tempi, di solito in giornata. È gratuito e non ti impegna.</p>
+  </div>
+</section>
+<section class="section section-tight">
+  <div class="wrap narrow">
+    {{ m.request_form(kind) }}
+    <p class="alt-contact">Preferisci parlare? <a href="tel:{{ BUSINESS.phone }}" data-call="quote">Chiama {{ BUSINESS.phone_display }}</a> o <a href="https://wa.me/{{ BUSINESS.whatsapp }}" rel="noopener" data-wa="quote">manda una foto su WhatsApp</a>.</p>
+  </div>
+</section>
+{% endblock %}

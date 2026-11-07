@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}Contatti | {{ BUSINESS.name }}, fiorista a Roma{% endblock %}
+{% block content %}
+<section class="page-hero page-hero-plain">
+  <div class="wrap"><h1>Contatti</h1><p class="hero-lead">Il modo più veloce è una telefonata o un messaggio WhatsApp.</p></div>
+</section>
+<section class="section section-tight">
+  <div class="wrap two">
+    <div>
+      <div class="kiosks">{% for loc in LOCATIONS %}{{ m.kiosk_sign(loc, 'h2') }}{% endfor %}</div>
+      <p class="alt-contact">Email: <a href="mailto:{{ BUSINESS.email }}">{{ BUSINESS.email }}</a></p>
+      <p class="footer-note">{{ BUSINESS.disambiguation }}</p>
+    </div>
+    <div>
+      <h2 class="h-small">Scrivici</h2>
+      {{ m.request_form(kind) }}
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}Fiorista a Roma: due chioschi di fiori e piante | {{ BUSINESS.name }}{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1>Fiori e piante a Roma, da due chioschi.</h1>
+      <p class="hero-lead">Bouquet, composizioni, fiori per matrimoni, lauree e funerali, consegne a domicilio. Li prepara a mano {{ BUSINESS.owner }}, fiorista.</p>
+      <p class="hero-book"><a class="btn btn-rose btn-big" href="{{ url_for('main.booking') }}">Prenota i tuoi fiori online</a> <span>in 5 minuti, con consegna a domicilio</span></p>
+      <div class="kiosks">
+        {% for loc in LOCATIONS %}{{ m.kiosk_sign(loc) }}{% endfor %}
+      </div>
+    </div>
+    <div class="hero-photos">
+      <figure class="hp-main">{{ picture('youssef-seddrak-cuore-di-rose', sizes='(min-width: 900px) 40vw, 100vw', priority=True) }}</figure>
+      <figure class="hp-a">{{ picture('bouquet-sposa-rose-lilla', sizes='(min-width: 900px) 20vw, 50vw') }}</figure>
+      <figure class="hp-b">{{ picture('chiosco-fiori-roma', sizes='(min-width: 900px) 20vw, 50vw') }}</figure>
+    </div>
+  </div>
+</section>
+
+<aside class="notice">
+  <div class="wrap"><p>{{ BUSINESS.disambiguation }}</p></div>
+</aside>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Cosa prepariamo</h2>
+      <p>Scegli un servizio per vedere foto e dettagli, oppure <a href="{{ url_for('main.quote_request') }}">descrivici la tua idea</a>.</p>
+    </div>
+    <div class="tiles">
+      {% for s in SERVICES %}{{ m.service_tile(s, loop.index) }}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-sage">
+  <div class="wrap about">
+    <figure class="about-photo">{{ picture('youssef-seddrak-fiorista', sizes='(min-width: 900px) 40vw, 100vw') }}</figure>
+    <div class="about-text">
+      <h2>Ciao, sono Youssef.</h2>
+      <p>Faccio il fiorista a Roma da anni. Ogni mattina scelgo i fiori al mercato e li porto nei due chioschi, a Largo Ferdinando Gregorovius e a Largo Santi Martiri dell'Uganda.</p>
+      <p>Mi piace capire per chi è il fiore e che cosa deve dire. Raccontamelo, anche con una foto su WhatsApp, e lo prepariamo insieme.</p>
+      <p><a class="btn btn-green" href="https://wa.me/{{ BUSINESS.whatsapp }}" rel="noopener" data-wa="about">Scrivi a Youssef su WhatsApp</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Dal chiosco, in questi giorni</h2>
+      <p><a href="{{ url_for('main.gallery') }}">Apri la galleria completa</a></p>
+    </div>
+    <div class="strip">
+      {% for n in strip %}<figure>{{ picture(n, sizes='(min-width: 900px) 25vw, 50vw') }}</figure>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-green">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>I due chioschi</h2>
+      <p>Stesso fiorista, stessa cura. Vieni in quello più vicino o chiamalo direttamente.</p>
+    </div>
+    <div class="two">
+      {% for loc in LOCATIONS %}
+      <div class="loc-card">
+        <h3><a href="/{{ loc.path }}/">{{ loc.name }}</a></h3>
+        <p>{{ address_line(loc) }}{% if loc.street_note %}, {{ loc.street_note }}{% endif %}<br>Zona {{ loc.zone }}</p>
+        {{ m.map_box(loc) }}
+        <p class="loc-actions"><a class="btn btn-rose" href="tel:{{ loc.phone }}" data-call="{{ loc.slug }}">Chiama {{ loc.phone_display }}</a> <a class="btn btn-ghost-light" href="{{ loc.maps_url }}" target="_blank" rel="noopener">Indicazioni</a></p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Dal blog</h2>
+      <p><a href="{{ url_for('main.blog') }}">Tutti gli articoli</a></p>
+    </div>
+    <div class="posts">
+      {% for p in posts %}
+      <a class="post-card" href="{{ url_for('main.post', slug=p.slug) }}">
+        {{ picture(p.cover, sizes='(min-width: 900px) 33vw, 100vw') }}
+        <span class="post-date">{{ p.date|date_it }}</span>
+        <span class="post-title">{{ p.title }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap cta-row">
+    <div>
+      <h2>Hai già un'idea?</h2>
+      <p>Mandaci una foto o descrivila: ti rispondiamo con un preventivo, di solito in giornata.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-white" href="{{ url_for('main.booking') }}">Prenota i fiori</a>
+      <a class="btn btn-ghost-light" href="{{ url_for('main.quote_request') }}">Chiedi un preventivo</a>
+      <a class="btn btn-ghost-light" href="tel:{{ BUSINESS.phone }}" data-call="cta">Chiama {{ BUSINESS.phone_display }}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

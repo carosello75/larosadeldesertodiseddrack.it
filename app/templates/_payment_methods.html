@@ -1,0 +1,25 @@
+<div class="paymethods">
+  {% if BUSINESS.iban %}
+  <div class="paybox">
+    <h3>Bonifico bancario</h3>
+    <dl class="iban">
+      <dt>Intestatario</dt><dd>{{ BUSINESS.iban_holder }}</dd>
+      <dt>IBAN</dt><dd><span class="iban-code" id="iban">{{ BUSINESS.iban }}</span> <button class="btn btn-light btn-sm" type="button" data-copy="#iban">Copia</button></dd>
+      {% if BUSINESS.bank_name %}<dt>Banca</dt><dd>{{ BUSINESS.bank_name }}</dd>{% endif %}
+      <dt>Causale</dt><dd>Fiori, il tuo nome e la data di consegna</dd>
+    </dl>
+    <p class="form-hint">Dopo il bonifico mandaci la ricevuta su WhatsApp: confermiamo subito l'ordine.</p>
+  </div>
+  {% endif %}
+  <div class="paybox">
+    <h3>PayPal o carta</h3>
+    <p><a class="btn btn-rose" href="{{ BUSINESS.paypal_url }}" rel="noopener" target="_blank">Paga con PayPal</a></p>
+    <div id="paypal-container-{{ BUSINESS.paypal_hosted_button_id }}" class="paypal-box" data-client="{{ BUSINESS.paypal_client_id }}" data-button="{{ BUSINESS.paypal_hosted_button_id }}">
+      <button class="btn btn-light" type="button" id="load-paypal">Paga con carta</button>
+    </div>
+  </div>
+  <div class="paybox">
+    <h3>Al chiosco</h3>
+    <p>Puoi pagare anche al ritiro, in contanti o con carta.</p>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ p.title }} | {{ BUSINESS.short_name }}{% endblock %}
+{% block description %}{{ p.excerpt }}{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block og_image %}{{ img_url(p.cover, 1600) }}{% endblock %}
+{% block head %}{{ jsonld({"@context":"https://schema.org","@type":"BlogPosting","headline":p.title,"datePublished":p.date,"image":img_url(p.cover,1600),"author":{"@type":"Person","name":BUSINESS.owner},"publisher":{"@id":config.SITE_URL ~ "/#organizzazione"},"mainEntityOfPage":canonical}) }}{% endblock %}
+{% block content %}
+<article class="article">
+  <header class="wrap article-head">
+    <p class="crumbs"><a href="{{ url_for('main.blog') }}">Blog</a></p>
+    <h1>{{ p.title }}</h1>
+    <p class="post-date">{{ p.date|date_it }}, di {{ BUSINESS.owner }}</p>
+  </header>
+  <figure class="wrap article-cover">{{ picture(p.cover, sizes='(min-width: 900px) 900px, 100vw', priority=True) }}</figure>
+  <div class="wrap prose article-body">{{ p.html|safe }}</div>
+</article>
+<section class="cta">
+  <div class="wrap cta-row">
+    <div><h2>Ti serve un consiglio?</h2><p>Chiedi a Youssef: rispondiamo anche su WhatsApp.</p></div>
+    <div class="cta-actions">
+      <a class="btn btn-white" href="tel:{{ BUSINESS.phone }}" data-call="post">Chiama {{ BUSINESS.phone_display }}</a>
+      <a class="btn btn-ghost-light" href="https://wa.me/{{ BUSINESS.whatsapp }}" rel="noopener" data-wa="post">WhatsApp</a>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Leggi anche</h2></div>
+    <div class="posts">{% for x in more %}<a class="post-card" href="{{ url_for('main.post', slug=x.slug) }}">{{ picture(x.cover, sizes='(min-width: 900px) 33vw, 100vw') }}<span class="post-date">{{ x.date|date_it }}</span><span class="post-title">{{ x.title }}</span></a>{% endfor %}</div>
+  </div>
+</section>
+{% endblock %}

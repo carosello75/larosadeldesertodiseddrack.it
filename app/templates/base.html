@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ BUSINESS.name }} – Fiorista a Roma{% endblock %}</title>
+<meta name="description" content="{% block description %}Fiorista a Roma con due chioschi di fiori e piante: Largo Ferdinando Gregorovius e Largo Santi Martiri dell'Uganda. Bouquet, matrimoni, funerali, lauree e consegna a domicilio. Chiama {{ BUSINESS.phone_display }}.{% endblock %}">
+<link rel="canonical" href="{{ canonical }}">
+<meta name="theme-color" content="#1F3B2D">
+<meta property="og:type" content="{% block og_type %}website{% endblock %}">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="{{ BUSINESS.name }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:image" content="{% block og_image %}{{ img_url('youssef-seddrak-cuore-di-rose', 1600) }}{% endblock %}">
+<link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Rosa del Deserto">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+<link rel="preload" href="{{ url_for('static', filename='fonts/bricolage.woff2') }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}?v=2">
+{{ jsonld(local_business_jsonld()) }}
+{% block head %}{% endblock %}
+{% if config.GOOGLE_TAG_ID %}
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage:'denied', ad_user_data:'denied', ad_personalization:'denied', analytics_storage:'denied'});
+  try { if (localStorage.getItem('consenso') === 'si') gtag('consent', 'update', {ad_storage:'granted', ad_user_data:'granted', ad_personalization:'granted', analytics_storage:'granted'}); } catch (e) {}
+  gtag('js', new Date()); gtag('config', '{{ config.GOOGLE_TAG_ID }}');
+  window.CALL_CONVERSION = '{{ config.GOOGLE_ADS_CALL_CONVERSION }}';
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ config.GOOGLE_TAG_ID }}"></script>
+{% endif %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+<a class="skip" href="#contenuto">Vai al contenuto</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="{{ url_for('main.home') }}" aria-label="{{ BUSINESS.name }}, home">
+      <img src="{{ url_for('static', filename='logo.svg') }}" alt="" width="44" height="44">
+      <span class="brand-text"><span class="brand-name">La Rosa del Deserto</span><span class="brand-sub">di Seddrak, fiorista a Roma</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="nav" aria-label="Principale">
+      <ul>
+        {% for label, ep in NAV if ep != 'main.booking' %}
+        <li><a href="{{ url_for(ep) }}"{% if request.endpoint == ep %} aria-current="page"{% endif %}>{{ label }}</a></li>
+        {% endfor %}
+      </ul>
+      <a class="btn btn-rose nav-cta" href="{{ url_for('main.booking') }}">Prenota i fiori</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenuto">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand">{{ BUSINESS.name }}</p>
+      <p>Fiori e piante a Roma.<br>Il tuo fiorista: {{ BUSINESS.owner }}.</p>
+      <p class="footer-note">{{ BUSINESS.disambiguation }}</p>
+    </div>
+    {% for loc in LOCATIONS %}
+    <div class="footer-loc">
+      <p class="footer-h"><a href="/{{ loc.path }}/">{{ loc.name }}</a></p>
+      <p>{{ loc.street }}{% if loc.street_note %} ({{ loc.street_note }}){% endif %}<br>{{ loc.postal_code }} {{ loc.city }} {{ loc.region }}</p>
+      <p><a href="tel:{{ loc.phone }}" data-call="{{ loc.slug }}">{{ loc.phone_display }}</a></p>
+    </div>
+    {% endfor %}
+    <div>
+      <p class="footer-h">Scrivici</p>
+      <p><a href="https://wa.me/{{ BUSINESS.whatsapp }}" rel="noopener">WhatsApp</a><br>
+         <a href="mailto:{{ BUSINESS.email }}">{{ BUSINESS.email }}</a></p>
+      <p><a href="{{ url_for('main.payment') }}">Pagamento online</a><br>
+         <a href="{{ url_for('main.privacy') }}">Privacy</a> e <a href="{{ url_for('main.cookies') }}">cookie</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <p>© {{ year }} {{ BUSINESS.name }} di {{ BUSINESS.owner }}{% if BUSINESS.vat %}, P.IVA {{ BUSINESS.vat }}{% endif %}</p>
+  </div>
+</footer>
+
+<div class="callbar" role="region" aria-label="Contatti rapidi">
+  {% if phones_differ %}
+    {% for loc in LOCATIONS %}<a class="callbar-btn" href="tel:{{ loc.phone }}" data-call="{{ loc.slug }}">Chiama {{ loc.street.replace('Largo ', '').split(' ')[-1] }}</a>{% endfor %}
+  {% else %}
+    <a class="callbar-btn" href="tel:{{ BUSINESS.phone }}" data-call="bar">Chiama {{ BUSINESS.phone_display }}</a>
+  {% endif %}
+  <a class="callbar-btn callbar-wa" href="https://wa.me/{{ BUSINESS.whatsapp }}" rel="noopener" data-wa="bar">WhatsApp</a>
+</div>
+
+{% if config.GOOGLE_TAG_ID %}
+<div class="consent" id="consenso" hidden>
+  <p>Usiamo cookie di Google per misurare le chiamate e le visite arrivate dagli annunci. <a href="{{ url_for('main.cookies') }}">Dettagli</a></p>
+  <div><button class="btn btn-ghost" data-consent="no">Rifiuta</button> <button class="btn btn-rose" data-consent="si">Accetta</button></div>
+</div>
+{% endif %}
+<div class="install" id="installa" hidden role="dialog" aria-labelledby="installa-t">
+  <img src="{{ url_for('static', filename='icon-192.png') }}" alt="" width="48" height="48">
+  <div class="install-text">
+    <p id="installa-t"><strong>Installa la app La Rosa del Deserto</strong></p>
+    <p class="install-sub" data-default="Prenoti i fiori in un tocco, dalla schermata Home." data-ios="Tocca Condividi e poi «Aggiungi alla schermata Home».">Prenoti i fiori in un tocco, dalla schermata Home.</p>
+  </div>
+  <div class="install-actions">
+    <button class="btn btn-rose btn-sm" type="button" data-install>Installa</button>
+    <button class="btn btn-ghost btn-sm" type="button" data-install-close aria-label="Chiudi">Non ora</button>
+  </div>
+</div>
+<script src="{{ url_for('static', filename='js/site.js') }}?v=2" defer></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Sei offline | {{ BUSINESS.short_name }}{% endblock %}
+{% block head %}<meta name="robots" content="noindex">{% endblock %}
+{% block content %}
+<section class="section"><div class="wrap narrow prose">
+<h1>Sei senza connessione</h1>
+<p>Puoi comunque chiamarci: il telefono funziona anche senza internet.</p>
+<p><a class="btn btn-rose btn-big" href="tel:{{ BUSINESS.phone }}">Chiama {{ BUSINESS.phone_display }}</a></p>
+</div></section>
+{% endblock %}

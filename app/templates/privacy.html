@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Privacy | {{ BUSINESS.short_name }}{% endblock %}
+{% block content %}
+<section class="section"><div class="wrap narrow prose">
+<h1>Informativa privacy</h1>
+<p><strong>Titolare del trattamento</strong>: {{ BUSINESS.owner }} – {{ BUSINESS.name }}{% if BUSINESS.vat %}, P.IVA {{ BUSINESS.vat }}{% endif %}. Email: {{ BUSINESS.email }}.</p>
+<h2>Quali dati raccogliamo</h2>
+<p>Il modulo «Prenota» invia nome, cognome, email, telefono, indirizzo di consegna e dettagli dell'ordine via email a {{ BUSINESS.booking_email }} tramite il servizio FormSubmit (formsubmit.co), che li inoltra senza conservarli per altri scopi. Il sito non ha un database e non salva dati.</p>
+<p> Il modulo prepara un messaggio che invii tu tramite WhatsApp o la tua email: riceviamo solo ciò che scegli di mandarci (nome, telefono, messaggio).</p>
+<h2>Perché</h2>
+<p>Per risponderti e prepararti un preventivo o un ordine (art. 6.1.b GDPR). Non li usiamo per pubblicità e non li cediamo a terzi.</p>
+<h2>Per quanto tempo</h2>
+<p>Per il tempo necessario a gestire la richiesta e, se diventa un ordine, per gli obblighi di legge.</p>
+<h2>I tuoi diritti</h2>
+<p>Puoi chiedere accesso, correzione o cancellazione dei tuoi dati scrivendo a {{ BUSINESS.email }}. Puoi anche rivolgerti al Garante per la protezione dei dati personali.</p>
+</div></section>
+{% endblock %}

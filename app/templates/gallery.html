@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Galleria: i nostri fiori e composizioni | {{ BUSINESS.short_name }}, fiorista a Roma{% endblock %}
+{% block description %}Foto di bouquet da sposa, addobbi, corone di laurea, composizioni di Natale e San Valentino preparati nei chioschi di {{ BUSINESS.owner }} a Roma.{% endblock %}
+{% block content %}
+<section class="page-hero page-hero-plain">
+  <div class="wrap">
+    <h1>Galleria</h1>
+    <p class="hero-lead">Foto vere dei lavori usciti dai nostri chioschi. Tocca una foto per ingrandirla.</p>
+    <nav class="chips" aria-label="Categorie">{% for label, cat, imgs in groups %}{% if imgs %}<a href="#{{ cat }}">{{ label }}</a>{% endif %}{% endfor %}</nav>
+  </div>
+</section>
+{% for label, cat, imgs in groups %}{% if imgs %}
+<section class="section section-tight" id="{{ cat }}">
+  <div class="wrap">
+    <h2 class="h-small">{{ label }}</h2>
+    <div class="masonry" data-lightbox>
+      {% for n in imgs %}<a href="{{ img_url(n, 1600) }}" class="masonry-item">{{ picture(n, sizes='(min-width: 900px) 33vw, 50vw') }}</a>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}{% endfor %}
+{% endblock %}

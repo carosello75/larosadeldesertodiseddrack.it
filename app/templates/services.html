@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}Servizi del fiorista a Roma: bouquet, matrimoni, funerali, lauree | {{ BUSINESS.short_name }}{% endblock %}
+{% block content %}
+<section class="page-hero page-hero-plain">
+  <div class="wrap">
+    <h1>Servizi</h1>
+    <p class="hero-lead">Tutto quello che prepariamo nei due chioschi di Roma, con consegna a domicilio.</p>
+  </div>
+</section>
+<section class="section section-tight">
+  <div class="wrap tiles">
+    {% for s in SERVICES %}{{ m.service_tile(s, loop.index) }}{% endfor %}
+  </div>
+</section>
+{% endblock %}

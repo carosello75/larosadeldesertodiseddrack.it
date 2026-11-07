@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Cookie policy | {{ BUSINESS.short_name }}{% endblock %}
+{% block content %}
+<section class="section"><div class="wrap narrow prose">
+<h1>Cookie policy</h1>
+<p>Questo sito non usa cookie di profilazione propri e non installa cookie finché non lo chiedi tu.</p>
+<h2>Servizi di terze parti caricati solo su richiesta</h2>
+<ul>
+<li><strong>Google Maps</strong>: la mappa si carica solo quando premi «Mostra la mappa». Da quel momento Google può impostare i propri cookie.</li>
+<li><strong>PayPal</strong>: il modulo di pagamento con carta si carica solo quando premi il relativo pulsante.</li>
+<li><strong>WhatsApp</strong>: i link aprono WhatsApp, che ha la sua informativa.</li>
+</ul>
+{% if config.GOOGLE_TAG_ID %}
+<h2>Misurazione degli annunci</h2>
+<p>Se accetti dal banner, usiamo Google Ads/Analytics per sapere quante chiamate e visite arrivano dagli annunci. Se rifiuti, Google riceve solo segnali anonimi senza cookie (modalità di consenso).</p>
+<p><button class="btn btn-light" type="button" data-consent-reset>Cambia la tua scelta</button></p>
+{% endif %}
+<p>Titolare: {{ BUSINESS.owner }}, {{ BUSINESS.email }}.</p>
+</div></section>
+{% endblock %}

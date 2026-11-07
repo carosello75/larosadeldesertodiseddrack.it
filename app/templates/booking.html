@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block title %}Prenota i tuoi fiori online a Roma | {{ BUSINESS.short_name }}{% endblock %}
+{% block description %}Prenota fiori e piante online in 5 minuti: scegli la data, consegna a domicilio a Roma o ritiro al chiosco. Conferma da Youssef Seddrak.{% endblock %}
+{% block content %}
+<section class="page-hero page-hero-plain">
+  <div class="wrap narrow">
+    <h1>Prenota i tuoi fiori online</h1>
+    <p class="hero-lead">Bastano 5 minuti. Scegli la data, la consegna o il ritiro, e Youssef ti conferma ordine e prezzo.</p>
+  </div>
+</section>
+<section class="section section-tight">
+  <div class="wrap narrow">
+    <form class="form" id="prenota" action="https://formsubmit.co/ajax/{{ BUSINESS.booking_email }}" method="post" data-wa="{{ BUSINESS.whatsapp }}" novalidate>
+      <p class="form-error" role="alert" hidden></p>
+      <input type="hidden" name="_subject" value="Nuova prenotazione fiori dal sito">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="Grazie per la tua prenotazione a {{ BUSINESS.name }}. Youssef ti contatterà a breve per confermare ordine e prezzo. Per urgenze: {{ BUSINESS.phone_display }} (anche WhatsApp).">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <fieldset>
+        <legend>I tuoi dati</legend>
+        <div class="field-row">
+          <div class="field"><label for="b-nome">Nome</label><input id="b-nome" name="Nome" autocomplete="given-name" required><p class="err" hidden>Scrivi il tuo nome.</p></div>
+          <div class="field"><label for="b-cognome">Cognome</label><input id="b-cognome" name="Cognome" autocomplete="family-name" required><p class="err" hidden>Scrivi il tuo cognome.</p></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="b-email">Email</label><input id="b-email" name="email" type="email" autocomplete="email" required><p class="err" hidden>Scrivi un'email valida: ti mandiamo la ricevuta.</p></div>
+          <div class="field"><label for="b-tel">Telefono</label><input id="b-tel" name="Telefono" type="tel" autocomplete="tel" inputmode="tel" required><p class="err" hidden>Scrivi un numero di telefono.</p></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Consegna o ritiro</legend>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="Modalità" value="Consegna a domicilio" checked> Consegna a domicilio</label>
+          {% for loc in LOCATIONS %}<label class="choice"><input type="radio" name="Modalità" value="Ritiro al chiosco di {{ loc.street }}"> Ritiro a {{ loc.street }}</label>{% endfor %}
+        </div>
+        <div id="b-indirizzo">
+          <div class="field"><label for="b-via">Via e numero civico</label><input id="b-via" name="Indirizzo" autocomplete="address-line1" required><p class="err" hidden>Scrivi via e numero civico per la consegna.</p></div>
+          <div class="field-row">
+            <div class="field"><label for="b-cap">CAP</label><input id="b-cap" name="CAP" autocomplete="postal-code" inputmode="numeric" maxlength="5"></div>
+            <div class="field"><label for="b-citta">Città</label><input id="b-citta" name="Città" autocomplete="address-level2" value="Roma"></div>
+          </div>
+          <div class="field"><label for="b-citofono">Citofono, scala, piano <span class="opt">(facoltativo)</span></label><input id="b-citofono" name="Citofono e note per la consegna"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Quando</legend>
+        <div class="field-row">
+          <div class="field"><label for="b-data">Giorno</label><input id="b-data" name="Data" type="date" required><p class="err" hidden>Scegli il giorno.</p></div>
+          <div class="field"><label for="b-fascia">Fascia oraria</label>
+            <select id="b-fascia" name="Fascia oraria"><option>Mattina</option><option>Pomeriggio</option><option>Sera</option><option>Indifferente</option></select></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>I fiori</legend>
+        <div class="field-row">
+          <div class="field"><label for="b-cosa">Cosa desideri</label>
+            <select id="b-cosa" name="Prodotto">{% for s in SERVICES if s.slug != 'consegna-a-domicilio' %}<option data-slug="{{ s.slug }}">{{ s.quote_label }}</option>{% endfor %}<option>Altro</option></select></div>
+          <div class="field"><label for="b-budget">Budget indicativo</label>
+            <select id="b-budget" name="Budget"><option>Fino a 30 €</option><option selected>30–50 €</option><option>50–80 €</option><option>80–150 €</option><option>Oltre 150 €</option><option>Da concordare</option></select></div>
+        </div>
+        <div class="field"><label for="b-desc">Colori, fiori preferiti, occasione</label><textarea id="b-desc" name="Descrizione" rows="4" maxlength="1500"></textarea></div>
+        <div class="field"><label for="b-biglietto">Messaggio sul biglietto <span class="opt">(facoltativo)</span></label><input id="b-biglietto" name="Biglietto" maxlength="200"></div>
+      </fieldset>
+
+      <div class="field check"><label><input type="checkbox" id="b-privacy" required> <span>Accetto che i miei dati siano usati per gestire la prenotazione (<a href="{{ url_for('main.privacy') }}">privacy</a>).</span></label><p class="err" hidden>Serve il consenso per inviare la prenotazione.</p></div>
+      <button class="btn btn-rose btn-big" type="submit">Invia la prenotazione</button>
+      <p class="form-hint">Non paghi ora: Youssef ti conferma disponibilità e prezzo, poi scegli come pagare.</p>
+    </form>
+
+    <div class="sent" id="prenota-ok" hidden tabindex="-1">
+      <h2>Prenotazione inviata</h2>
+      <p>Grazie! Youssef ha ricevuto la prenotazione e ti contatterà per confermare. Ti abbiamo mandato una ricevuta per email.</p>
+      <p><a class="btn btn-green" id="prenota-wa" href="https://wa.me/{{ BUSINESS.whatsapp }}" rel="noopener" target="_blank">Vuoi una risposta più veloce? Scrivi su WhatsApp</a></p>
+      <h2 class="h-small">Come pagare</h2>
+      {% include "_payment_methods.html" %}
+    </div>
+    <p class="alt-contact">Preferisci parlare? <a href="tel:{{ BUSINESS.phone }}" data-call="booking">Chiama {{ BUSINESS.phone_display }}</a>.</p>
+  </div>
+</section>
+{% endblock %}

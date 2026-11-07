@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}{{ s.title }} a Roma | {{ BUSINESS.short_name }}, fiorista{% endblock %}
+{% block description %}{{ s.lead }} Fiorista a Roma: Largo Ferdinando Gregorovius e Largo Santi Martiri dell'Uganda. Chiama {{ BUSINESS.phone_display }}.{% endblock %}
+{% block og_image %}{{ img_url(s.cover, 1600) }}{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap page-hero-grid">
+    <div>
+      <p class="crumbs"><a href="{{ url_for('main.services') }}">Servizi</a></p>
+      <h1>{{ s.title }}</h1>
+      <p class="hero-lead">{{ s.lead }}</p>
+      <div class="prose">{% for para in s.body %}<p>{{ para }}</p>{% endfor %}</div>
+      <p class="actions">
+        <a class="btn btn-rose" href="{{ url_for('main.booking', servizio=s.slug) }}">Prenota online</a>
+        <a class="btn btn-light" href="{{ url_for('main.quote_request', servizio=s.slug) }}">Chiedi un preventivo</a>
+        <a class="btn btn-light" href="tel:{{ BUSINESS.phone }}" data-call="service">Chiama {{ BUSINESS.phone_display }}</a>
+      </p>
+    </div>
+    <figure class="page-hero-photo">{{ picture(s.cover, sizes='(min-width: 900px) 45vw, 100vw', priority=True) }}</figure>
+  </div>
+</section>
+{% if gallery %}
+<section class="section section-tight">
+  <div class="wrap">
+    <h2 class="h-small">Lavori realizzati</h2>
+    <div class="masonry" data-lightbox>
+      {% for n in gallery %}<a href="{{ img_url(n, 1600) }}" class="masonry-item">{{ picture(n, sizes='(min-width: 900px) 33vw, 50vw') }}</a>{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+<section class="section section-sage">
+  <div class="wrap">
+    <div class="section-head"><h2>Ordina dal chiosco più vicino</h2></div>
+    <div class="kiosks kiosks-row">{% for loc in LOCATIONS %}{{ m.kiosk_sign(loc, 'h3') }}{% endfor %}</div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>Altri servizi</h2></div>
+    <div class="tiles tiles-compact">{% for o in others %}{{ m.service_tile(o, loop.index) }}{% endfor %}</div>
+  </div>
+</section>
+{% endblock %}

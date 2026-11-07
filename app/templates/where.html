@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}Dove siamo: i due chioschi di fiori a Roma | {{ BUSINESS.short_name }}{% endblock %}
+{% block description %}Chioschi di fiori a Largo Ferdinando Gregorovius (00179, Appio Latino) e Largo Santi Martiri dell'Uganda (00147, Montagnola). Indicazioni e telefono.{% endblock %}
+{% block content %}
+<section class="page-hero page-hero-plain">
+  <div class="wrap">
+    <h1>Dove siamo</h1>
+    <p class="hero-lead">Due chioschi in Roma Sud. Stesso fiorista, {{ BUSINESS.owner }}.</p>
+  </div>
+</section>
+<section class="section section-tight">
+  <div class="wrap two">
+    {% for loc in LOCATIONS %}
+    <div>
+      {{ m.kiosk_sign(loc, 'h2') }}
+      {{ m.map_box(loc) }}
+      <p><a href="/{{ loc.path }}/">Tutto sul {{ loc.name|lower }}</a></p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
