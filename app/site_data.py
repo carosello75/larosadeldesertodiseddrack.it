@@ -44,6 +44,8 @@ LOCATIONS = [
     {
         "slug": "gregorovius",
         "path": "fioraio-largo-ferdinando-gregorovius",
+        "seo_title": "Fioraio Largo Gregorovius, Appio Latino | Fiori Seddrak",
+        "seo_description": "Chiosco di fiori e piante a Largo Ferdinando Gregorovius, angolo Via Macedonia (00179 Roma). Bouquet e consegne. Tel. 389 996 2511.",
         "name": "Chiosco di Largo Ferdinando Gregorovius",
         "full_name": "Piante e Fiori Roma di Seddrak – Largo Gregorovius",
         "street": "Largo Ferdinando Gregorovius",
@@ -65,6 +67,8 @@ LOCATIONS = [
     {
         "slug": "uganda",
         "path": "fioraio-largo-santi-martiri-uganda",
+        "seo_title": "Fioraio Largo S. Martiri dell'Uganda, Montagnola | Seddrak",
+        "seo_description": "Chiosco di fiori e piante a Largo Santi Martiri dell'Uganda (00147 Roma), zona Montagnola e Laurentina. Tel. 389 996 2511.",
         "name": "Chiosco di Largo Santi Martiri dell'Uganda",
         "full_name": "Piante e Fiori Roma di Seddrak – Largo Santi Martiri dell'Uganda",
         "street": "Largo Santi Martiri dell'Uganda",
@@ -88,6 +92,8 @@ LOCATIONS = [
 SERVICES = [
     {
         "slug": "bouquet-da-sposa",
+        "seo_title": "Bouquet da sposa a Roma | Fiorista Seddrak",
+        "seo_description": "Bouquet da sposa con rose, calle e peonie fatti a mano a Roma. Bouquet per damigelle e boutonnière. Preventivo gratuito: 389 996 2511.",
         "title": "Bouquet da sposa",
         "lead": "Il bouquet nasce da un incontro: ci racconti abito, colori e stagione, noi scegliamo i fiori.",
         "cat": "sposa",
@@ -101,6 +107,8 @@ SERVICES = [
     },
     {
         "slug": "addobbi-matrimoni",
+        "seo_title": "Addobbi matrimoni a Roma | Chiesa e ricevimento",
+        "seo_description": "Addobbi floreali per matrimoni, battesimi e comunioni a Roma: chiesa, comune e ricevimento. Preventivo gratuito dal fiorista Seddrak.",
         "title": "Addobbi per matrimoni e cerimonie",
         "lead": "Chiesa, comune, ricevimento: allestiamo i fiori per tutta la giornata.",
         "cat": "matrimoni",
@@ -114,6 +122,8 @@ SERVICES = [
     },
     {
         "slug": "fiori-per-funerali",
+        "seo_title": "Fiori per funerali a Roma | Corone e cuscini",
+        "seo_description": "Corone, cuscini e composizioni di cordoglio a Roma, anche urgenti. Consegna in chiesa e camera mortuaria. Chiama il 389 996 2511.",
         "title": "Fiori per funerali e cordoglio",
         "lead": "Corone, cuscini e composizioni di cordoglio, preparati con cura anche con poco preavviso.",
         "cat": "funerali",
@@ -127,6 +137,8 @@ SERVICES = [
     },
     {
         "slug": "corone-di-laurea",
+        "seo_title": "Corona di alloro per laurea a Roma | Fiori Seddrak",
+        "seo_description": "Corone di alloro fresco per la laurea a Roma, con nastro rosso e fiori. Prenota con qualche giorno di anticipo: 389 996 2511.",
         "title": "Corone di alloro per la laurea",
         "lead": "Alloro fresco intrecciato a mano, con nastro rosso e fiori se li desideri.",
         "cat": "laurea",
@@ -140,6 +152,8 @@ SERVICES = [
     },
     {
         "slug": "bouquet-e-composizioni",
+        "seo_title": "Bouquet e composizioni di fiori a Roma | Seddrak",
+        "seo_description": "Mazzi di fiori e composizioni per compleanni, anniversari e regali, preparati al momento a Roma Sud. Consegna a domicilio.",
         "title": "Bouquet e composizioni",
         "lead": "Mazzi per compleanni, anniversari e per dire grazie, composti al momento.",
         "cat": "bouquet",
@@ -153,6 +167,8 @@ SERVICES = [
     },
     {
         "slug": "piante-terrazze-e-giardini",
+        "seo_title": "Piante per casa e terrazzo a Roma | Fiori Seddrak",
+        "seo_description": "Orchidee, piante verdi e fiorite, piante per terrazzi e balconi a Roma Sud, con i consigli per curarle. Consegna a domicilio.",
         "title": "Piante, terrazze e giardini",
         "lead": "Piante da interno e da esterno, e consigli per farle stare bene.",
         "cat": "piante",
@@ -166,6 +182,8 @@ SERVICES = [
     },
     {
         "slug": "natale",
+        "seo_title": "Composizioni di Natale a Roma | Fiorista Seddrak",
+        "seo_description": "Stelle di Natale, centrotavola con candele e mele, corone d'abete e regali aziendali a Roma Sud. Ordina per telefono o WhatsApp.",
         "title": "Natale",
         "lead": "Stelle di Natale, centrotavola con mele e candele, abeti decorati.",
         "cat": "natale",
@@ -179,6 +197,8 @@ SERVICES = [
     },
     {
         "slug": "san-valentino",
+        "seo_title": "Fiori per San Valentino a Roma | Cuori di rose",
+        "seo_description": "Cuori di rose in scatola, rose rosse e blu, cesti con cioccolatini per San Valentino a Roma. Consegna a domicilio con biglietto.",
         "title": "San Valentino e anniversari",
         "lead": "Cuori di rose, scatole con cioccolatini, rose blu e rosse.",
         "cat": "sanvalentino",
@@ -192,6 +212,8 @@ SERVICES = [
     },
     {
         "slug": "consegna-a-domicilio",
+        "seo_title": "Fiori a domicilio a Roma Sud | Fiorista Seddrak",
+        "seo_description": "Consegna di fiori e piante a domicilio a Appio Latino, Tuscolano, Montagnola, EUR e Garbatella. Ordina al 389 996 2511.",
         "title": "Consegna a domicilio a Roma",
         "lead": "Portiamo fiori e piante a casa, in ufficio, in chiesa o in ospedale.",
         "cat": "bouquet",

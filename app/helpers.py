@@ -59,7 +59,7 @@ def local_business_jsonld():
         "@type": "Organization",
         "@id": org_id,
         "name": BUSINESS["name"],
-        "alternateName": ["Fiori Seddrak", "Fiorista Seddrak Roma"],
+        "alternateName": ["Piante e Fiori Seddrak", "Piante e Fiori Seddrack", "Fiori Seddrak", "Fiori Seddrack", "Fiorista Seddrak Roma"],
         "url": site + "/",
         "logo": site + url_for("static", filename="logo.svg"),
         "email": BUSINESS["email"],

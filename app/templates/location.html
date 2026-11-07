@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% import "_macros.html" as m with context %}
-{% block title %}Fioraio a {{ loc.street }}, {{ loc.zone }} Roma | {{ BUSINESS.short_name }}{% endblock %}
-{% block description %}Chiosco di fiori e piante a {{ loc.street }} ({{ loc.zone }}, {{ loc.postal_code }} Roma). Bouquet, composizioni, fiori per cerimonie e consegna a domicilio. Chiama {{ loc.phone_display }}.{% endblock %}
+{% block title %}{{ loc.seo_title }}{% endblock %}
+{% block description %}{{ loc.seo_description }}{% endblock %}
 {% block og_image %}{{ img_url(loc.photo, 1600) }}{% endblock %}
 {% block content %}
 <section class="page-hero">

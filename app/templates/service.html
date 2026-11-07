@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% import "_macros.html" as m with context %}
-{% block title %}{{ s.title }} a Roma | {{ BUSINESS.short_name }}, fiorista{% endblock %}
-{% block description %}{{ s.lead }} Fiorista a Roma: Largo Ferdinando Gregorovius e Largo Santi Martiri dell'Uganda. Chiama {{ BUSINESS.phone_display }}.{% endblock %}
+{% block title %}{{ s.seo_title }}{% endblock %}
+{% block description %}{{ s.seo_description }}{% endblock %}
 {% block og_image %}{{ img_url(s.cover, 1600) }}{% endblock %}
 {% block content %}
 <section class="page-hero">

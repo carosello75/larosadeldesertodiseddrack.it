@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% block title %}{{ p.title }} | {{ BUSINESS.short_name }}{% endblock %}
-{% block description %}{{ p.excerpt }}{% endblock %}
+{% block title %}{{ p.seo_title or p.title }}{% endblock %}
+{% block description %}{{ p.description or p.excerpt }}{% endblock %}
 {% block og_type %}article{% endblock %}
 {% block og_image %}{{ img_url(p.cover, 1600) }}{% endblock %}
-{% block head %}{{ jsonld({"@context":"https://schema.org","@type":"BlogPosting","headline":p.title,"datePublished":p.date,"image":img_url(p.cover,1600),"author":{"@type":"Person","name":BUSINESS.owner},"publisher":{"@id":config.SITE_URL ~ "/#organizzazione"},"mainEntityOfPage":canonical}) }}{% endblock %}
+{% block head %}{{ jsonld({"@context":"https://schema.org","@type":"BlogPosting","headline":p.title,"datePublished":p.date,"dateModified":p.updated or p.date,"image":img_url(p.cover,1600),"author":{"@type":"Person","name":BUSINESS.owner},"publisher":{"@id":config.SITE_URL ~ "/#organizzazione"},"mainEntityOfPage":canonical}) }}{% endblock %}
 {% block content %}
 <article class="article">
   <header class="wrap article-head">
