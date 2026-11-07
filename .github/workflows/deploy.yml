@@ -28,7 +28,10 @@ jobs:
         run: python -m pytest -q
       - name: Genera il sito statico
         env:
-          SITE_URL: https://larosadeldesertodiseddrack.it
+          # ANTEPRIMA sull'indirizzo provvisorio di GitHub. Quando il dominio è attivo:
+          #   SITE_URL: https://larosadeldesertodiseddrack.it   e   BASE_PATH: ""
+          SITE_URL: https://carosello75.github.io/larosadeldesertodiseddrack.it
+          BASE_PATH: /larosadeldesertodiseddrack.it
           # Quando la campagna Google Ads è pronta, aggiungi questi due valori in
           # Settings > Secrets and variables > Actions > Variables
           GOOGLE_TAG_ID: ${{ vars.GOOGLE_TAG_ID }}

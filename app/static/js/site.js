@@ -227,7 +227,7 @@
 
   // App installabile (PWA)
   if ("serviceWorker" in navigator) {
-    window.addEventListener("load", function () { navigator.serviceWorker.register("/sw.js").catch(function () {}); });
+    window.addEventListener("load", function () { navigator.serviceWorker.register((document.documentElement.getAttribute("data-base") || "") + "/sw.js").catch(function () {}); });
   }
   var inst = $("#installa"), deferred = null;
   var standalone = window.matchMedia("(display-mode: standalone)").matches || navigator.standalone;
