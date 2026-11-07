@@ -362,3 +362,7 @@ legend { font-family: var(--display); font-weight: 650; font-size: 1.25rem; colo
 .install-actions { display: flex; flex-direction: column; gap: 6px; }
 @media (min-width: 761px) { .install { bottom: 16px; left: auto; right: 16px; } }
 @media (max-width: 400px) { .install img { display: none; } }
+
+/* ---------- Video ---------- */
+.videos { display: flex; flex-wrap: wrap; gap: 12px; }
+.videos video { width: min(300px, 100%); height: auto; aspect-ratio: 9 / 16; background: var(--leaf); border-radius: var(--radius); }

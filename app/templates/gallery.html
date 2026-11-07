@@ -6,7 +6,19 @@
   <div class="wrap">
     <h1>Galleria</h1>
     <p class="hero-lead">Foto vere dei lavori usciti dai nostri chioschi. Tocca una foto per ingrandirla.</p>
-    <nav class="chips" aria-label="Categorie">{% for label, cat, imgs in groups %}{% if imgs %}<a href="#{{ cat }}">{{ label }}</a>{% endif %}{% endfor %}</nav>
+    <nav class="chips" aria-label="Categorie"><a href="#video">Video</a>{% for label, cat, imgs in groups %}{% if imgs %}<a href="#{{ cat }}">{{ label }}</a>{% endif %}{% endfor %}</nav>
+  </div>
+</section>
+<section class="section section-tight" id="video">
+  <div class="wrap">
+    <h2 class="h-small">Video dal chiosco</h2>
+    <div class="videos">
+      {% for v in [1, 2] %}
+      <video controls playsinline preload="none" width="480" height="854" poster="{{ url_for('static', filename='video/chiosco-' ~ v ~ '.webp') }}">
+        <source src="{{ url_for('static', filename='video/chiosco-' ~ v ~ '.mp4') }}" type="video/mp4">
+      </video>
+      {% endfor %}
+    </div>
   </div>
 </section>
 {% for label, cat, imgs in groups %}{% if imgs %}

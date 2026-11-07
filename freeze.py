@@ -18,7 +18,7 @@ OUT = Path(__file__).parent / "build"
 # Sottocartella quando il sito è servito da https://carosello75.github.io/larosadeldesertodiseddrack.it/
 # Con il dominio vero attivo, BASE_PATH resta vuoto.
 BASE = os.environ.get("BASE_PATH", "").rstrip("/")
-ATTR_RE = re.compile(r'\b(href|src|action)="/(?!/)')
+ATTR_RE = re.compile(r'\b(href|src|action|poster)="/(?!/)')
 SRCSET_RE = re.compile(r'srcset="([^"]*)"')
 
 

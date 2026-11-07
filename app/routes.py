@@ -50,8 +50,9 @@ def location(path):
 def gallery():
     cats = [("sposa", "Bouquet da sposa"), ("matrimoni", "Matrimoni e cerimonie"),
             ("bouquet", "Bouquet e composizioni"), ("sanvalentino", "San Valentino"),
-            ("natale", "Natale"), ("laurea", "Lauree"), ("funerali", "Cordoglio"),
-            ("piante", "Piante")]
+            ("autunno", "Autunno"), ("natale", "Natale"), ("laurea", "Lauree"),
+            ("funerali", "Cordoglio e funerali"), ("piante", "Piante"),
+            ("youssef", "Youssef al lavoro"), ("hero", "I chioschi")]
     groups = [(label, cat, images_in(cat)) for cat, label in cats]
     return render_template("gallery.html", groups=groups)
 

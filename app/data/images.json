@@ -71,16 +71,6 @@
    "960": "youssef-seddrak-bouquet-960.webp"
   }
  },
- "youssef-seddrak-composizione": {
-  "cat": "youssef",
-  "alt": "Youssef prepara un cuore di rose",
-  "w": 1152,
-  "h": 1536,
-  "files": {
-   "480": "youssef-seddrak-composizione-480.webp",
-   "960": "youssef-seddrak-composizione-960.webp"
-  }
- },
  "bouquet-sposa-rose-avorio": {
   "cat": "sposa",
   "alt": "Bouquet da sposa di rose avorio e gypsophila",
@@ -131,16 +121,6 @@
    "960": "bouquet-sposa-calle-960.webp"
   }
  },
- "bouquet-sposa-calle-gypsophila": {
-  "cat": "sposa",
-  "alt": "Bouquet di calle e fiori bianchi",
-  "w": 1114,
-  "h": 2048,
-  "files": {
-   "480": "bouquet-sposa-calle-gypsophila-480.webp",
-   "960": "bouquet-sposa-calle-gypsophila-960.webp"
-  }
- },
  "bouquet-tulipani-rosa": {
   "cat": "sposa",
   "alt": "Bouquet di tulipani rosa e fiori bianchi",
@@ -149,16 +129,6 @@
   "files": {
    "480": "bouquet-tulipani-rosa-480.webp",
    "960": "bouquet-tulipani-rosa-960.webp"
-  }
- },
- "bouquet-sposa-rose-bianche-2": {
-  "cat": "sposa",
-  "alt": "Bouquet di rose bianche con pizzo",
-  "w": 1536,
-  "h": 2048,
-  "files": {
-   "480": "bouquet-sposa-rose-bianche-2-480.webp",
-   "960": "bouquet-sposa-rose-bianche-2-960.webp"
   }
  },
  "boutonniere-sposo": {
@@ -229,16 +199,6 @@
   "files": {
    "480": "corona-funebre-rose-rosse-480.webp",
    "960": "corona-funebre-rose-rosse-960.webp"
-  }
- },
- "corona-funebre-garofani": {
-  "cat": "funerali",
-  "alt": "Corona funebre con garofani e nastro",
-  "w": 1080,
-  "h": 1773,
-  "files": {
-   "480": "corona-funebre-garofani-480.webp",
-   "960": "corona-funebre-garofani-960.webp"
   }
  },
  "cuscino-funebre-girasoli": {
@@ -651,16 +611,6 @@
    "960": "cuore-rose-cioccolatini-960.webp"
   }
  },
- "scatola-rose-cioccolatini": {
-  "cat": "sanvalentino",
-  "alt": "Scatola di rose e cioccolatini",
-  "w": 1152,
-  "h": 1536,
-  "files": {
-   "480": "scatola-rose-cioccolatini-480.webp",
-   "960": "scatola-rose-cioccolatini-960.webp"
-  }
- },
  "cesto-san-valentino-peluche": {
   "cat": "sanvalentino",
   "alt": "Cesto di San Valentino con peluche",
@@ -669,6 +619,633 @@
   "files": {
    "480": "cesto-san-valentino-peluche-480.webp",
    "960": "cesto-san-valentino-peluche-960.webp"
+  }
+ },
+ "corona-rose-rosse-gerbere-gialle": {
+  "cat": "funerali",
+  "alt": "Corona funebre di rose rosse e rosa con gerbere gialle",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "corona-rose-rosse-gerbere-gialle-480.webp",
+   "960": "corona-rose-rosse-gerbere-gialle-960.webp"
+  }
+ },
+ "cuscino-funebre-gigli-girasole": {
+  "cat": "funerali",
+  "alt": "Cuscino funebre con gigli bianchi, rose rosse e girasole",
+  "w": 1600,
+  "h": 1200,
+  "files": {
+   "480": "cuscino-funebre-gigli-girasole-480.webp",
+   "960": "cuscino-funebre-gigli-girasole-960.webp",
+   "1600": "cuscino-funebre-gigli-girasole-1600.webp"
+  }
+ },
+ "cuscino-funebre-lilla-garofani": {
+  "cat": "funerali",
+  "alt": "Cuscino funebre lilla con rose, garofani e crisantemi",
+  "w": 2040,
+  "h": 1530,
+  "files": {
+   "480": "cuscino-funebre-lilla-garofani-480.webp",
+   "960": "cuscino-funebre-lilla-garofani-960.webp",
+   "1600": "cuscino-funebre-lilla-garofani-1600.webp"
+  }
+ },
+ "copribara-rose-rosse-bianche": {
+  "cat": "funerali",
+  "alt": "Copribara di rose rosse e bianche con gerbere",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "copribara-rose-rosse-bianche-480.webp",
+   "960": "copribara-rose-rosse-bianche-960.webp"
+  }
+ },
+ "cuscino-funebre-girasoli-lilium": {
+  "cat": "funerali",
+  "alt": "Cuscino funebre con girasoli e lilium arancio",
+  "w": 2000,
+  "h": 1500,
+  "files": {
+   "480": "cuscino-funebre-girasoli-lilium-480.webp",
+   "960": "cuscino-funebre-girasoli-lilium-960.webp",
+   "1600": "cuscino-funebre-girasoli-lilium-1600.webp"
+  }
+ },
+ "cuscino-funebre-gerbere-colorate": {
+  "cat": "funerali",
+  "alt": "Cuscino funebre con gerbere colorate e crisantemi",
+  "w": 2040,
+  "h": 1530,
+  "files": {
+   "480": "cuscino-funebre-gerbere-colorate-480.webp",
+   "960": "cuscino-funebre-gerbere-colorate-960.webp",
+   "1600": "cuscino-funebre-gerbere-colorate-1600.webp"
+  }
+ },
+ "composizione-funebre-chiesa": {
+  "cat": "funerali",
+  "alt": "Composizione di rose rosse e gigli bianchi in chiesa",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizione-funebre-chiesa-480.webp",
+   "960": "composizione-funebre-chiesa-960.webp"
+  }
+ },
+ "composizione-strelitzia-gigli": {
+  "cat": "funerali",
+  "alt": "Composizione con strelitzie, gigli bianchi e gerbere",
+  "w": 2000,
+  "h": 1500,
+  "files": {
+   "480": "composizione-strelitzia-gigli-480.webp",
+   "960": "composizione-strelitzia-gigli-960.webp",
+   "1600": "composizione-strelitzia-gigli-1600.webp"
+  }
+ },
+ "composizione-cordoglio-gerbere-rosa": {
+  "cat": "funerali",
+  "alt": "Composizione di cordoglio con gerbere, gigli e garofani rosa in chiesa",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizione-cordoglio-gerbere-rosa-480.webp",
+   "960": "composizione-cordoglio-gerbere-rosa-960.webp"
+  }
+ },
+ "cuscino-rose-bianche-gypsophila": {
+  "cat": "funerali",
+  "alt": "Cuscino funebre di rose bianche e gypsophila",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cuscino-rose-bianche-gypsophila-480.webp",
+   "960": "cuscino-rose-bianche-gypsophila-960.webp"
+  }
+ },
+ "copribara-fiori-misti-chiesa": {
+  "cat": "funerali",
+  "alt": "Composizione funebre di fiori misti con crisantemi rosa",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "copribara-fiori-misti-chiesa-480.webp",
+   "960": "copribara-fiori-misti-chiesa-960.webp"
+  }
+ },
+ "addobbo-chiesa-funerale": {
+  "cat": "funerali",
+  "alt": "Composizione di cordoglio davanti all'altare",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "addobbo-chiesa-funerale-480.webp",
+   "960": "addobbo-chiesa-funerale-960.webp"
+  }
+ },
+ "cuore-rose-rosse-cavalletto": {
+  "cat": "funerali",
+  "alt": "Cuore di rose rosse e gypsophila su cavalletto",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cuore-rose-rosse-cavalletto-480.webp",
+   "960": "cuore-rose-rosse-cavalletto-960.webp"
+  }
+ },
+ "composizioni-funerale-in-chiesa": {
+  "cat": "funerali",
+  "alt": "Cuore di rose rosse e composizioni di cordoglio in chiesa",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizioni-funerale-in-chiesa-480.webp",
+   "960": "composizioni-funerale-in-chiesa-960.webp"
+  }
+ },
+ "composizione-gigli-rose-rosa": {
+  "cat": "funerali",
+  "alt": "Composizione di gigli bianchi, rose rosa e gerbere",
+  "w": 2040,
+  "h": 1530,
+  "files": {
+   "480": "composizione-gigli-rose-rosa-480.webp",
+   "960": "composizione-gigli-rose-rosa-960.webp",
+   "1600": "composizione-gigli-rose-rosa-1600.webp"
+  }
+ },
+ "cuscino-girasoli-rose-lilium": {
+  "cat": "funerali",
+  "alt": "Cuscino funebre con girasoli, rose e lilium",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cuscino-girasoli-rose-lilium-480.webp",
+   "960": "cuscino-girasoli-rose-lilium-960.webp"
+  }
+ },
+ "copribara-girasoli-rose": {
+  "cat": "funerali",
+  "alt": "Composizione funebre con girasoli e rose rosse in chiesa",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "copribara-girasoli-rose-480.webp",
+   "960": "copribara-girasoli-rose-960.webp"
+  }
+ },
+ "youssef-seddrak-copribara": {
+  "cat": "youssef",
+  "alt": "Youssef Seddrak con un copribara di rose rosse e bianche",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "youssef-seddrak-copribara-480.webp",
+   "960": "youssef-seddrak-copribara-960.webp"
+  }
+ },
+ "cuore-rose-garofani-misti": {
+  "cat": "funerali",
+  "alt": "Cuore di rose arancio, rosse e garofani screziati",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cuore-rose-garofani-misti-480.webp",
+   "960": "cuore-rose-garofani-misti-960.webp"
+  }
+ },
+ "composizione-zucca-autunno": {
+  "cat": "autunno",
+  "alt": "Composizione d'autunno in una zucca con rosa arancio e orchidea",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizione-zucca-autunno-480.webp",
+   "960": "composizione-zucca-autunno-960.webp"
+  }
+ },
+ "composizione-autunno-mela-rose": {
+  "cat": "autunno",
+  "alt": "Composizione d'autunno con rose gialle, orchidea, mela e peperoncini",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizione-autunno-mela-rose-480.webp",
+   "960": "composizione-autunno-mela-rose-960.webp"
+  }
+ },
+ "composizione-zucca-bianca": {
+  "cat": "autunno",
+  "alt": "Composizione in zucca bianca con rosa arancio, pigna e agrumi secchi",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizione-zucca-bianca-480.webp",
+   "960": "composizione-zucca-bianca-960.webp"
+  }
+ },
+ "youssef-seddrak-chiosco-natale": {
+  "cat": "youssef",
+  "alt": "Youssef Seddrak davanti al chiosco addobbato per Natale",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "youssef-seddrak-chiosco-natale-480.webp",
+   "960": "youssef-seddrak-chiosco-natale-960.webp"
+  }
+ },
+ "centrotavola-natale-candela-vischio": {
+  "cat": "natale",
+  "alt": "Centrotavola di Natale con candela rossa, vischio e pigne",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "centrotavola-natale-candela-vischio-480.webp",
+   "960": "centrotavola-natale-candela-vischio-960.webp"
+  }
+ },
+ "alberello-natale-mele-agrifoglio": {
+  "cat": "natale",
+  "alt": "Composizione natalizia ad alberello con mele, agrifoglio e bacche",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "alberello-natale-mele-agrifoglio-480.webp",
+   "960": "alberello-natale-mele-agrifoglio-960.webp"
+  }
+ },
+ "centrotavola-natale-ortensia-rossa": {
+  "cat": "natale",
+  "alt": "Centrotavola di Natale con ortensia rossa, candela e pigne",
+  "w": 899,
+  "h": 1599,
+  "files": {
+   "480": "centrotavola-natale-ortensia-rossa-480.webp"
+  }
+ },
+ "centrotavola-natale-ortensie-candele": {
+  "cat": "natale",
+  "alt": "Centrotavola di Natale con ortensie rosse, candele e pigne",
+  "w": 1080,
+  "h": 1920,
+  "files": {
+   "480": "centrotavola-natale-ortensie-candele-480.webp",
+   "960": "centrotavola-natale-ortensie-candele-960.webp"
+  }
+ },
+ "composizione-zucca-rose-gialle": {
+  "cat": "autunno",
+  "alt": "Composizione d'autunno in zucca con rose gialle, mela e agrumi",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizione-zucca-rose-gialle-480.webp",
+   "960": "composizione-zucca-rose-gialle-960.webp"
+  }
+ },
+ "composizioni-natale-zucca": {
+  "cat": "natale",
+  "alt": "Composizioni natalizie in zucca con mele e bacche rosse",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "composizioni-natale-zucca-480.webp",
+   "960": "composizioni-natale-zucca-960.webp"
+  }
+ },
+ "composizione-natale-tronco-pigne": {
+  "cat": "natale",
+  "alt": "Composizione natalizia con tronco, pigne, agrifoglio e arancia secca",
+  "w": 1080,
+  "h": 1920,
+  "files": {
+   "480": "composizione-natale-tronco-pigne-480.webp",
+   "960": "composizione-natale-tronco-pigne-960.webp"
+  }
+ },
+ "corone-abete-natale": {
+  "cat": "natale",
+  "alt": "Corone di abete per la porta di Natale",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "corone-abete-natale-480.webp",
+   "960": "corone-abete-natale-960.webp"
+  }
+ },
+ "composizione-natale-arance-melograni": {
+  "cat": "natale",
+  "alt": "Composizione natalizia con arance, mele, pigne e bacche",
+  "w": 1080,
+  "h": 1920,
+  "files": {
+   "480": "composizione-natale-arance-melograni-480.webp",
+   "960": "composizione-natale-arance-melograni-960.webp"
+  }
+ },
+ "addobbo-matrimonio-navata-rosa": {
+  "cat": "matrimoni",
+  "alt": "Addobbo matrimonio: composizioni rosa e bianche sui banchi della chiesa",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "addobbo-matrimonio-navata-rosa-480.webp",
+   "960": "addobbo-matrimonio-navata-rosa-960.webp"
+  }
+ },
+ "addobbo-matrimonio-navata-pesca": {
+  "cat": "matrimoni",
+  "alt": "Addobbo matrimonio: rose pesca e gerbere bianche lungo la navata",
+  "w": 1200,
+  "h": 1600,
+  "files": {
+   "480": "addobbo-matrimonio-navata-pesca-480.webp",
+   "960": "addobbo-matrimonio-navata-pesca-960.webp"
+  }
+ },
+ "composizione-altare-bianca": {
+  "cat": "matrimoni",
+  "alt": "Composizione bianca di gerbere e violacciocche per l'altare",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "composizione-altare-bianca-480.webp",
+   "960": "composizione-altare-bianca-960.webp"
+  }
+ },
+ "bouquet-sposa-rose-cipria": {
+  "cat": "sposa",
+  "alt": "Bouquet da sposa di rose cipria e gypsophila",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "bouquet-sposa-rose-cipria-480.webp",
+   "960": "bouquet-sposa-rose-cipria-960.webp"
+  }
+ },
+ "composizione-gigli-rosa-lisianthus": {
+  "cat": "funerali",
+  "alt": "Composizione di gigli rosa, lisianthus e anthurium verde",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizione-gigli-rosa-lisianthus-480.webp",
+   "960": "composizione-gigli-rosa-lisianthus-960.webp"
+  }
+ },
+ "abete-in-vaso": {
+  "cat": "natale",
+  "alt": "Abete di Natale in vaso al chiosco",
+  "w": 1080,
+  "h": 1920,
+  "files": {
+   "480": "abete-in-vaso-480.webp",
+   "960": "abete-in-vaso-960.webp"
+  }
+ },
+ "bouquet-sposa-rose-bianche-rete": {
+  "cat": "sposa",
+  "alt": "Bouquet da sposa di rose bianche e gypsophila con rete",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "bouquet-sposa-rose-bianche-rete-480.webp",
+   "960": "bouquet-sposa-rose-bianche-rete-960.webp"
+  }
+ },
+ "bouquet-sposa-calle-tulipani": {
+  "cat": "sposa",
+  "alt": "Bouquet da sposa di calle e tulipani bianchi",
+  "w": 2000,
+  "h": 1500,
+  "files": {
+   "480": "bouquet-sposa-calle-tulipani-480.webp",
+   "960": "bouquet-sposa-calle-tulipani-960.webp",
+   "1600": "bouquet-sposa-calle-tulipani-1600.webp"
+  }
+ },
+ "bouquet-ortensia-rosa": {
+  "cat": "sposa",
+  "alt": "Bouquet di ortensia rosa, rose e lisianthus",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "bouquet-ortensia-rosa-480.webp",
+   "960": "bouquet-ortensia-rosa-960.webp"
+  }
+ },
+ "bouquet-rose-bianche-azzurre": {
+  "cat": "sposa",
+  "alt": "Bouquet di rose bianche e azzurre con gypsophila",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "bouquet-rose-bianche-azzurre-480.webp",
+   "960": "bouquet-rose-bianche-azzurre-960.webp"
+  }
+ },
+ "bouquet-sposa-rose-bianche-aspidistra": {
+  "cat": "sposa",
+  "alt": "Bouquet di rose bianche con foglie di aspidistra",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "bouquet-sposa-rose-bianche-aspidistra-480.webp",
+   "960": "bouquet-sposa-rose-bianche-aspidistra-960.webp"
+  }
+ },
+ "bouquet-sposa-rose-pesca-calle": {
+  "cat": "sposa",
+  "alt": "Bouquet da sposa di rose pesca e calle bianche",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "bouquet-sposa-rose-pesca-calle-480.webp",
+   "960": "bouquet-sposa-rose-pesca-calle-960.webp"
+  }
+ },
+ "bouquet-sposa-calle-bouvardia": {
+  "cat": "sposa",
+  "alt": "Bouquet da sposa di calle e bouvardia bianche",
+  "w": 1200,
+  "h": 1600,
+  "files": {
+   "480": "bouquet-sposa-calle-bouvardia-480.webp",
+   "960": "bouquet-sposa-calle-bouvardia-960.webp"
+  }
+ },
+ "bouquet-tulipani-bianchi-rosa-rossa": {
+  "cat": "sposa",
+  "alt": "Bouquet di tulipani bianchi con una rosa rossa al centro",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "bouquet-tulipani-bianchi-rosa-rossa-480.webp",
+   "960": "bouquet-tulipani-bianchi-rosa-rossa-960.webp"
+  }
+ },
+ "composizione-altare-rosa-bianca": {
+  "cat": "matrimoni",
+  "alt": "Composizione per l'altare con lilium rosa e gerbere bianche",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "composizione-altare-rosa-bianca-480.webp",
+   "960": "composizione-altare-rosa-bianca-960.webp"
+  }
+ },
+ "ghirlande-ortensie-rose": {
+  "cat": "matrimoni",
+  "alt": "Ghirlande di ortensie rosa e rose bianche in preparazione",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "ghirlande-ortensie-rose-480.webp",
+   "960": "ghirlande-ortensie-rose-960.webp"
+  }
+ },
+ "tavolo-sposi-fiori": {
+  "cat": "matrimoni",
+  "alt": "Allestimento floreale del tavolo degli sposi",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "tavolo-sposi-fiori-480.webp",
+   "960": "tavolo-sposi-fiori-960.webp"
+  }
+ },
+ "composizione-funebre-anthurium-lilium": {
+  "cat": "funerali",
+  "alt": "Composizione di cordoglio con lilium, anthurium e rose bianche",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizione-funebre-anthurium-lilium-480.webp",
+   "960": "composizione-funebre-anthurium-lilium-960.webp"
+  }
+ },
+ "composizione-lilium-rosa-cavalletto": {
+  "cat": "funerali",
+  "alt": "Composizione di lilium rosa e gerbere su cavalletto",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "composizione-lilium-rosa-cavalletto-480.webp",
+   "960": "composizione-lilium-rosa-cavalletto-960.webp"
+  }
+ },
+ "composizione-lilium-gerbere-rosa": {
+  "cat": "funerali",
+  "alt": "Composizione di lilium bianchi, rose e gerbere rosa",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizione-lilium-gerbere-rosa-480.webp",
+   "960": "composizione-lilium-gerbere-rosa-960.webp"
+  }
+ },
+ "youssef-seddrak-bouquet-sposa": {
+  "cat": "youssef",
+  "alt": "Youssef Seddrak con un bouquet da sposa di rose",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "youssef-seddrak-bouquet-sposa-480.webp",
+   "960": "youssef-seddrak-bouquet-sposa-960.webp"
+  }
+ },
+ "youssef-seddrak-bouquet-cascata": {
+  "cat": "youssef",
+  "alt": "Youssef Seddrak con un bouquet da sposa a cascata",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "youssef-seddrak-bouquet-cascata-480.webp",
+   "960": "youssef-seddrak-bouquet-cascata-960.webp"
+  }
+ },
+ "bouquet-sposa-rose-fresie-bianche": {
+  "cat": "sposa",
+  "alt": "Bouquet da sposa di rose e fresie bianche",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "bouquet-sposa-rose-fresie-bianche-480.webp",
+   "960": "bouquet-sposa-rose-fresie-bianche-960.webp"
+  }
+ },
+ "bouquet-sposa-e-damigella-calle": {
+  "cat": "sposa",
+  "alt": "Bouquet da sposa e da damigella di calle e bouvardia",
+  "w": 2000,
+  "h": 1500,
+  "files": {
+   "480": "bouquet-sposa-e-damigella-calle-480.webp",
+   "960": "bouquet-sposa-e-damigella-calle-960.webp",
+   "1600": "bouquet-sposa-e-damigella-calle-1600.webp"
+  }
+ },
+ "sala-ricevimento-centrotavola": {
+  "cat": "matrimoni",
+  "alt": "Sala del ricevimento con centrotavola alti di rose e lisianthus",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "sala-ricevimento-centrotavola-480.webp",
+   "960": "sala-ricevimento-centrotavola-960.webp"
+  }
+ },
+ "centrotavola-coppa-rose-lisianthus": {
+  "cat": "matrimoni",
+  "alt": "Centrotavola in coppa alta con rose e lisianthus",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "centrotavola-coppa-rose-lisianthus-480.webp",
+   "960": "centrotavola-coppa-rose-lisianthus-960.webp"
+  }
+ },
+ "centrotavola-gerbere-rose-bianche": {
+  "cat": "matrimoni",
+  "alt": "Centrotavola di gerbere e rose bianche",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "centrotavola-gerbere-rose-bianche-480.webp",
+   "960": "centrotavola-gerbere-rose-bianche-960.webp"
+  }
+ },
+ "composizione-funebre-bianca-anthurium": {
+  "cat": "funerali",
+  "alt": "Composizione di cordoglio bianca con lilium, gerbere e anthurium",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizione-funebre-bianca-anthurium-480.webp",
+   "960": "composizione-funebre-bianca-anthurium-960.webp"
+  }
+ },
+ "composizione-lilium-rosa-gerbere-bianche": {
+  "cat": "funerali",
+  "alt": "Composizione di lilium rosa e gerbere bianche",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "composizione-lilium-rosa-gerbere-bianche-480.webp",
+   "960": "composizione-lilium-rosa-gerbere-bianche-960.webp"
+  }
+ },
+ "youssef-seddrak-bouquet-pesca": {
+  "cat": "youssef",
+  "alt": "Youssef Seddrak con un bouquet di rose pesca e calle al chiosco",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "youssef-seddrak-bouquet-pesca-480.webp",
+   "960": "youssef-seddrak-bouquet-pesca-960.webp"
   }
  }
 }
