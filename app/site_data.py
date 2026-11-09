@@ -211,6 +211,22 @@ SERVICES = [
         "quote_label": "San Valentino",
     },
     {
+        "slug": "bouquet-di-dolci-e-regali",
+        "seo_title": "Bouquet di dolci e cesti regalo a Roma | Fiori Seddrak",
+        "seo_description": "Bouquet di snack e cioccolatini, cesti con peluche, orsetti di rose e palloncini a Roma Sud. Per compleanni, lauree e San Valentino. Consegna a domicilio.",
+        "title": "Bouquet di dolci e regali",
+        "lead": "Bouquet di snack e cioccolatini, cesti con peluche, orsetti di rose e palloncini.",
+        "cat": "regali",
+        "cover": "cesto-peluche-rose-e-cioccolato",
+        "extra": ["youssef-seddrak-bouquet-di-snack", "youssef-seddrak-bouquet-dolci", "orsetto-di-rose-i-love-you", "scatola-cuore-rose-rosse-e-ferrero"],
+        "body": [
+            "Youssef prepara bouquet di dolci e snack incartati come un mazzo di fiori: un regalo diverso per compleanni, lauree e feste.",
+            "Cesti e borsette con peluche, cioccolatini, una rosa e il palloncino a cuore. Anche colonne di palloncini per addobbare.",
+            "Dicci per chi è e quanto vuoi spendere: lo componiamo su misura e lo consegniamo a domicilio con un biglietto.",
+        ],
+        "quote_label": "Bouquet di dolci e regali",
+    },
+    {
         "slug": "consegna-a-domicilio",
         "seo_title": "Fiori a domicilio a Roma Sud | Fiorista Seddrak",
         "seo_description": "Consegna di fiori e piante a domicilio a Appio Latino, Tuscolano, Montagnola, EUR e Garbatella. Ordina al 389 996 2511.",

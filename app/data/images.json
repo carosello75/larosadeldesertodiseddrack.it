@@ -1258,5 +1258,159 @@
    "960": "youssef-seddrak-bouquet-dolci-960.webp",
    "1600": "youssef-seddrak-bouquet-dolci-1600.webp"
   }
+ },
+ "orsetto-di-rose-con-rose-rosse-e-ferrero": {
+  "cat": "sanvalentino",
+  "alt": "Orsetto di rose rosse con tre rose, cioccolatini e palloncino a cuore",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "orsetto-di-rose-con-rose-rosse-e-ferrero-480.webp",
+   "960": "orsetto-di-rose-con-rose-rosse-e-ferrero-960.webp",
+   "1600": "orsetto-di-rose-con-rose-rosse-e-ferrero-1600.webp"
+  }
+ },
+ "youssef-seddrak-composizione-natalizia": {
+  "cat": "youssef",
+  "alt": "Youssef Seddrak con una composizione natalizia di pigne e agrifoglio",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "youssef-seddrak-composizione-natalizia-480.webp",
+   "960": "youssef-seddrak-composizione-natalizia-960.webp",
+   "1600": "youssef-seddrak-composizione-natalizia-1600.webp"
+  }
+ },
+ "colonna-di-palloncini-rossi-e-bianchi": {
+  "cat": "regali",
+  "alt": "Colonna di palloncini rossi e bianchi al chiosco",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "colonna-di-palloncini-rossi-e-bianchi-480.webp",
+   "960": "colonna-di-palloncini-rossi-e-bianchi-960.webp",
+   "1600": "colonna-di-palloncini-rossi-e-bianchi-1600.webp"
+  }
+ },
+ "youssef-seddrak-bouquet-di-snack": {
+  "cat": "youssef",
+  "alt": "Youssef Seddrak con due bouquet di snack e dolci",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "youssef-seddrak-bouquet-di-snack-480.webp",
+   "960": "youssef-seddrak-bouquet-di-snack-960.webp",
+   "1600": "youssef-seddrak-bouquet-di-snack-1600.webp"
+  }
+ },
+ "box-love-orsetto-rose-e-cioccolatini": {
+  "cat": "sanvalentino",
+  "alt": "Box regalo con orsetto di rose, rose rosse, cioccolatini e palloncino",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "box-love-orsetto-rose-e-cioccolatini-480.webp",
+   "960": "box-love-orsetto-rose-e-cioccolatini-960.webp",
+   "1600": "box-love-orsetto-rose-e-cioccolatini-1600.webp"
+  }
+ },
+ "cesto-peluche-rose-e-cioccolato": {
+  "cat": "regali",
+  "alt": "Cesto con peluche, rose rosse, cioccolatini e palloncino a cuore",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cesto-peluche-rose-e-cioccolato-480.webp",
+   "960": "cesto-peluche-rose-e-cioccolato-960.webp",
+   "1600": "cesto-peluche-rose-e-cioccolato-1600.webp"
+  }
+ },
+ "cassetta-legno-orsetto-rose-e-ferrero": {
+  "cat": "sanvalentino",
+  "alt": "Cassetta in legno con orsetto, rose rosse e rosa, cioccolatini",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cassetta-legno-orsetto-rose-e-ferrero-480.webp",
+   "960": "cassetta-legno-orsetto-rose-e-ferrero-960.webp",
+   "1600": "cassetta-legno-orsetto-rose-e-ferrero-1600.webp"
+  }
+ },
+ "composizione-natalizia-pigne-cotone-agrifoglio": {
+  "cat": "natale",
+  "alt": "Composizione natalizia con pigne, cotone, spighe e agrifoglio",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizione-natalizia-pigne-cotone-agrifoglio-480.webp",
+   "960": "composizione-natalizia-pigne-cotone-agrifoglio-960.webp",
+   "1600": "composizione-natalizia-pigne-cotone-agrifoglio-1600.webp"
+  }
+ },
+ "orsetto-di-rose-i-love-you": {
+  "cat": "sanvalentino",
+  "alt": "Orsetto di rose rosse con cioccolatini e palloncino I love you",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "orsetto-di-rose-i-love-you-480.webp",
+   "960": "orsetto-di-rose-i-love-you-960.webp",
+   "1600": "orsetto-di-rose-i-love-you-1600.webp"
+  }
+ },
+ "borsette-regalo-orsetto-luminoso": {
+  "cat": "regali",
+  "alt": "Borsette regalo con orsetto luminoso, cioccolatini e palloncino",
+  "w": 1200,
+  "h": 1600,
+  "files": {
+   "480": "borsette-regalo-orsetto-luminoso-480.webp",
+   "960": "borsette-regalo-orsetto-luminoso-960.webp",
+   "1600": "borsette-regalo-orsetto-luminoso-1600.webp"
+  }
+ },
+ "cestino-peluche-cioccolatini-i-love-you": {
+  "cat": "regali",
+  "alt": "Cestino con peluche, rosa rossa, cioccolatini e palloncino I love you",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cestino-peluche-cioccolatini-i-love-you-480.webp",
+   "960": "cestino-peluche-cioccolatini-i-love-you-960.webp",
+   "1600": "cestino-peluche-cioccolatini-i-love-you-1600.webp"
+  }
+ },
+ "bouquet-tulipani-e-palma": {
+  "cat": "bouquet",
+  "alt": "Bouquet di tulipani rossi e gialli con foglie di palma e ginestra bianca",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "bouquet-tulipani-e-palma-480.webp",
+   "960": "bouquet-tulipani-e-palma-960.webp",
+   "1600": "bouquet-tulipani-e-palma-1600.webp"
+  }
+ },
+ "borsetta-regalo-orsetto-luminoso-i-love-you": {
+  "cat": "regali",
+  "alt": "Borsetta regalo con orsetto luminoso, cioccolatini e palloncino I love you",
+  "w": 1200,
+  "h": 1600,
+  "files": {
+   "480": "borsetta-regalo-orsetto-luminoso-i-love-you-480.webp",
+   "960": "borsetta-regalo-orsetto-luminoso-i-love-you-960.webp",
+   "1600": "borsetta-regalo-orsetto-luminoso-i-love-you-1600.webp"
+  }
+ },
+ "scatola-cuore-rose-rosse-e-ferrero": {
+  "cat": "sanvalentino",
+  "alt": "Scatola a cuore con rose rosse, gypsophila e cioccolatini",
+  "w": 1200,
+  "h": 1600,
+  "files": {
+   "480": "scatola-cuore-rose-rosse-e-ferrero-480.webp",
+   "960": "scatola-cuore-rose-rosse-e-ferrero-960.webp",
+   "1600": "scatola-cuore-rose-rosse-e-ferrero-1600.webp"
+  }
  }
 }

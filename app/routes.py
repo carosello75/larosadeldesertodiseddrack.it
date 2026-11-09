@@ -31,7 +31,7 @@ def services():
 @bp.route("/servizi/<slug>/")
 def service(slug):
     s = SERVICE_BY_SLUG.get(slug) or abort(404)
-    gallery = [n for n in images_in(s["cat"]) if n != s["cover"]][:9]
+    gallery = [n for n in s.get("extra", []) + images_in(s["cat"]) if n != s["cover"]][:9]
     others = [x for x in SERVICES if x["slug"] != slug][:4]
     return render_template("service.html", s=s, gallery=gallery, others=others)
 
@@ -50,6 +50,7 @@ def location(path):
 def gallery():
     cats = [("sposa", "Bouquet da sposa"), ("matrimoni", "Matrimoni e cerimonie"),
             ("bouquet", "Bouquet e composizioni"), ("sanvalentino", "San Valentino"),
+            ("regali", "Regali: dolci, peluche e palloncini"),
             ("autunno", "Autunno"), ("natale", "Natale"), ("laurea", "Lauree"),
             ("funerali", "Cordoglio e funerali"), ("piante", "Piante"),
             ("youssef", "Youssef al lavoro"), ("hero", "I chioschi")]
