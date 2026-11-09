@@ -1522,5 +1522,49 @@
    "960": "cuscino-funebre-rose-bianche-960.webp",
    "1600": "cuscino-funebre-rose-bianche-1600.webp"
   }
+ },
+ "cuore-funebre-rose-bianche-e-gypsophila": {
+  "cat": "funerali",
+  "alt": "Composizione funebre a cuore di rose bianche e gypsophila",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cuore-funebre-rose-bianche-e-gypsophila-480.webp",
+   "960": "cuore-funebre-rose-bianche-e-gypsophila-960.webp",
+   "1600": "cuore-funebre-rose-bianche-e-gypsophila-1600.webp"
+  }
+ },
+ "composizione-funebre-rose-gerbere-in-chiesa": {
+  "cat": "funerali",
+  "alt": "Composizione di cordoglio con rose, gerbere, lilium e anthurium in chiesa",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "composizione-funebre-rose-gerbere-in-chiesa-480.webp",
+   "960": "composizione-funebre-rose-gerbere-in-chiesa-960.webp",
+   "1600": "composizione-funebre-rose-gerbere-in-chiesa-1600.webp"
+  }
+ },
+ "orsetto-di-rose-in-confezione-regalo": {
+  "cat": "sanvalentino",
+  "alt": "Orsetto di rose rosse con Ferrero e palloncino, incartato e pronto da regalare",
+  "w": 1200,
+  "h": 1600,
+  "files": {
+   "480": "orsetto-di-rose-in-confezione-regalo-480.webp",
+   "960": "orsetto-di-rose-in-confezione-regalo-960.webp",
+   "1600": "orsetto-di-rose-in-confezione-regalo-1600.webp"
+  }
+ },
+ "banco-di-lavoro-fiorista-composizione": {
+  "cat": "youssef",
+  "alt": "Il banco di lavoro di Youssef mentre prepara una composizione di lisianthus e lilium",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "banco-di-lavoro-fiorista-composizione-480.webp",
+   "960": "banco-di-lavoro-fiorista-composizione-960.webp",
+   "1600": "banco-di-lavoro-fiorista-composizione-1600.webp"
+  }
  }
 }
