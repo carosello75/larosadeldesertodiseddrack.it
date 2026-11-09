@@ -1412,5 +1412,115 @@
    "960": "scatola-cuore-rose-rosse-e-ferrero-960.webp",
    "1600": "scatola-cuore-rose-rosse-e-ferrero-1600.webp"
   }
+ },
+ "cesto-vimini-peluche-rose-e-cioccolato": {
+  "cat": "regali",
+  "alt": "Cesto di vimini bianco con peluche, rose rosse, Kinder Bueno, Bounty e palloncino a cuore",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cesto-vimini-peluche-rose-e-cioccolato-480.webp",
+   "960": "cesto-vimini-peluche-rose-e-cioccolato-960.webp",
+   "1600": "cesto-vimini-peluche-rose-e-cioccolato-1600.webp"
+  }
+ },
+ "orsetto-di-rose-raffaello-happy-valentine": {
+  "cat": "sanvalentino",
+  "alt": "Orsetto di rose rosse con Raffaello, Ferrero Rocher e palloncino Happy Valentine",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "orsetto-di-rose-raffaello-happy-valentine-480.webp",
+   "960": "orsetto-di-rose-raffaello-happy-valentine-960.webp",
+   "1600": "orsetto-di-rose-raffaello-happy-valentine-1600.webp"
+  }
+ },
+ "cestino-rosso-peluche-ti-amo": {
+  "cat": "regali",
+  "alt": "Cestino rosso con peluche Ti amo, rosa rossa, cioccolatini e palloncino I love you",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cestino-rosso-peluche-ti-amo-480.webp",
+   "960": "cestino-rosso-peluche-ti-amo-960.webp",
+   "1600": "cestino-rosso-peluche-ti-amo-1600.webp"
+  }
+ },
+ "vetrina-regali-san-valentino-chiosco": {
+  "cat": "sanvalentino",
+  "alt": "La vetrina di San Valentino al chiosco: orsetti di rose, peluche, scatole a cuore con rose",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "vetrina-regali-san-valentino-chiosco-480.webp",
+   "960": "vetrina-regali-san-valentino-chiosco-960.webp",
+   "1600": "vetrina-regali-san-valentino-chiosco-1600.webp"
+  }
+ },
+ "orsetto-di-rose-carta-nera-e-oro": {
+  "cat": "sanvalentino",
+  "alt": "Orsetto di rose rosse incartato in nero e oro con Ferrero Rocher",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "orsetto-di-rose-carta-nera-e-oro-480.webp",
+   "960": "orsetto-di-rose-carta-nera-e-oro-960.webp",
+   "1600": "orsetto-di-rose-carta-nera-e-oro-1600.webp"
+  }
+ },
+ "scatola-cuore-peluche-rose-kinder": {
+  "cat": "regali",
+  "alt": "Scatola a cuore con peluche, rose rosse, gypsophila e Kinder Bueno",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "scatola-cuore-peluche-rose-kinder-480.webp",
+   "960": "scatola-cuore-peluche-rose-kinder-960.webp",
+   "1600": "scatola-cuore-peluche-rose-kinder-1600.webp"
+  }
+ },
+ "cesto-peluche-tra-le-rose-rosse": {
+  "cat": "regali",
+  "alt": "Cesto con peluche e cioccolatini tra le rose rosse di San Valentino",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cesto-peluche-tra-le-rose-rosse-480.webp",
+   "960": "cesto-peluche-tra-le-rose-rosse-960.webp",
+   "1600": "cesto-peluche-tra-le-rose-rosse-1600.webp"
+  }
+ },
+ "scatola-rossa-peluche-rose-e-kinder": {
+  "cat": "regali",
+  "alt": "Scatola rossa con orsetto, rose rossa e arancio e Kinder Bueno",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "scatola-rossa-peluche-rose-e-kinder-480.webp",
+   "960": "scatola-rossa-peluche-rose-e-kinder-960.webp",
+   "1600": "scatola-rossa-peluche-rose-e-kinder-1600.webp"
+  }
+ },
+ "box-love-orsetto-di-rose-happy-valentine": {
+  "cat": "sanvalentino",
+  "alt": "Box love con orsetto di rose, rose rosse, Ferrero e palloncino Happy Valentine",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "box-love-orsetto-di-rose-happy-valentine-480.webp",
+   "960": "box-love-orsetto-di-rose-happy-valentine-960.webp",
+   "1600": "box-love-orsetto-di-rose-happy-valentine-1600.webp"
+  }
+ },
+ "cuscino-funebre-rose-bianche": {
+  "cat": "funerali",
+  "alt": "Cuscino funebre di rose bianche e gypsophila con nastro viola",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cuscino-funebre-rose-bianche-480.webp",
+   "960": "cuscino-funebre-rose-bianche-960.webp",
+   "1600": "cuscino-funebre-rose-bianche-1600.webp"
+  }
  }
 }
