@@ -1643,5 +1643,60 @@
    "960": "vetrina-bouquet-misti-e-regali-960.webp",
    "1600": "vetrina-bouquet-misti-e-regali-1600.webp"
   }
+ },
+ "arco-di-palloncini-love-al-chiosco": {
+  "cat": "regali",
+  "alt": "Arco di palloncini rossi e bianchi con la scritta love sul marciapiede del chiosco",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "arco-di-palloncini-love-al-chiosco-480.webp",
+   "960": "arco-di-palloncini-love-al-chiosco-960.webp",
+   "1600": "arco-di-palloncini-love-al-chiosco-1600.webp"
+  }
+ },
+ "vetrina-orsetti-di-rose-e-scatole-cuore": {
+  "cat": "sanvalentino",
+  "alt": "Orsetti di rose, scatole a cuore con rose e Ferrero, peluche e palloncini per San Valentino",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "vetrina-orsetti-di-rose-e-scatole-cuore-480.webp",
+   "960": "vetrina-orsetti-di-rose-e-scatole-cuore-960.webp",
+   "1600": "vetrina-orsetti-di-rose-e-scatole-cuore-1600.webp"
+  }
+ },
+ "youssef-seddrak-centrotavola-natalizio": {
+  "cat": "youssef",
+  "alt": "Youssef Seddrak con un centrotavola natalizio di pigne, agrifoglio, cotone e arance secche",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "youssef-seddrak-centrotavola-natalizio-480.webp",
+   "960": "youssef-seddrak-centrotavola-natalizio-960.webp",
+   "1600": "youssef-seddrak-centrotavola-natalizio-1600.webp"
+  }
+ },
+ "chiosco-di-sera-bouquet-e-regali": {
+  "cat": "hero",
+  "alt": "Il chiosco di sera con bouquet misti, orchidee, piante e regali di San Valentino",
+  "w": 2040,
+  "h": 1530,
+  "files": {
+   "480": "chiosco-di-sera-bouquet-e-regali-480.webp",
+   "960": "chiosco-di-sera-bouquet-e-regali-960.webp",
+   "1600": "chiosco-di-sera-bouquet-e-regali-1600.webp"
+  }
+ },
+ "composizione-altare-gerbere-e-violaciocche": {
+  "cat": "matrimoni",
+  "alt": "Composizione d'altare con gerbere bianche, violaciocche crema e bocche di leone",
+  "w": 1500,
+  "h": 2000,
+  "files": {
+   "480": "composizione-altare-gerbere-e-violaciocche-480.webp",
+   "960": "composizione-altare-gerbere-e-violaciocche-960.webp",
+   "1600": "composizione-altare-gerbere-e-violaciocche-1600.webp"
+  }
  }
 }
