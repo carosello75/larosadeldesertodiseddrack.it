@@ -1566,5 +1566,82 @@
    "960": "banco-di-lavoro-fiorista-composizione-960.webp",
    "1600": "banco-di-lavoro-fiorista-composizione-1600.webp"
   }
+ },
+ "orchidea-bianca-regalo-con-ferrero": {
+  "cat": "piante",
+  "alt": "Orchidea bianca in vaso con cuore rosso e Ferrero Rocher, pronta da regalare",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "orchidea-bianca-regalo-con-ferrero-480.webp",
+   "960": "orchidea-bianca-regalo-con-ferrero-960.webp",
+   "1600": "orchidea-bianca-regalo-con-ferrero-1600.webp"
+  }
+ },
+ "box-love-orsetto-di-rose-al-sole": {
+  "cat": "sanvalentino",
+  "alt": "Box love con orsetto di rose, rose rosse, Ferrero e palloncino Happy Valentine",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "box-love-orsetto-di-rose-al-sole-480.webp",
+   "960": "box-love-orsetto-di-rose-al-sole-960.webp",
+   "1600": "box-love-orsetto-di-rose-al-sole-1600.webp"
+  }
+ },
+ "composizione-cordoglio-lilium-e-crisantemi": {
+  "cat": "funerali",
+  "alt": "Composizione di cordoglio con lilium, crisantemi, violaciocche e lisianthus davanti al chiosco",
+  "w": 2040,
+  "h": 1530,
+  "files": {
+   "480": "composizione-cordoglio-lilium-e-crisantemi-480.webp",
+   "960": "composizione-cordoglio-lilium-e-crisantemi-960.webp",
+   "1600": "composizione-cordoglio-lilium-e-crisantemi-1600.webp"
+  }
+ },
+ "cestino-orchidee-cymbidium-e-peperoncini": {
+  "cat": "bouquet",
+  "alt": "Cestino con orchidee cymbidium, margherite bicolore, garofanini e peperoncini",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "cestino-orchidee-cymbidium-e-peperoncini-480.webp",
+   "960": "cestino-orchidee-cymbidium-e-peperoncini-960.webp",
+   "1600": "cestino-orchidee-cymbidium-e-peperoncini-1600.webp"
+  }
+ },
+ "fiorista-bouquet-lilium-e-rose": {
+  "cat": "youssef",
+  "alt": "Bouquet di lilium, rose e orchidee preparato nel chiosco",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "fiorista-bouquet-lilium-e-rose-480.webp",
+   "960": "fiorista-bouquet-lilium-e-rose-960.webp",
+   "1600": "fiorista-bouquet-lilium-e-rose-1600.webp"
+  }
+ },
+ "arco-di-palloncini-davanti-al-chiosco": {
+  "cat": "regali",
+  "alt": "Arco di palloncini rossi e bianchi davanti al chiosco per San Valentino",
+  "w": 1200,
+  "h": 1600,
+  "files": {
+   "480": "arco-di-palloncini-davanti-al-chiosco-480.webp",
+   "960": "arco-di-palloncini-davanti-al-chiosco-960.webp",
+   "1600": "arco-di-palloncini-davanti-al-chiosco-1600.webp"
+  }
+ },
+ "vetrina-bouquet-misti-e-regali": {
+  "cat": "bouquet",
+  "alt": "Tanti bouquet misti di rose, ranuncoli e mimosa pronti al chiosco",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "vetrina-bouquet-misti-e-regali-480.webp",
+   "960": "vetrina-bouquet-misti-e-regali-960.webp",
+   "1600": "vetrina-bouquet-misti-e-regali-1600.webp"
+  }
  }
 }
