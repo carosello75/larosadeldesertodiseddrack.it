@@ -1247,5 +1247,16 @@
    "480": "youssef-seddrak-bouquet-pesca-480.webp",
    "960": "youssef-seddrak-bouquet-pesca-960.webp"
   }
+ },
+ "youssef-seddrak-bouquet-dolci": {
+  "cat": "youssef",
+  "alt": "Youssef Seddrak nel suo chiosco di fiori a Roma con due bouquet di dolci",
+  "w": 1530,
+  "h": 2040,
+  "files": {
+   "480": "youssef-seddrak-bouquet-dolci-480.webp",
+   "960": "youssef-seddrak-bouquet-dolci-960.webp",
+   "1600": "youssef-seddrak-bouquet-dolci-1600.webp"
+  }
  }
 }
