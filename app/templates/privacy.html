@@ -1,18 +1,63 @@
 {% extends "base.html" %}
-{% block title %}Privacy | {{ BUSINESS.short_name }}{% endblock %}
+{% block title %}Privacy policy | {{ BUSINESS.short_name }}{% endblock %}
+{% block description %}Informativa sul trattamento dei dati personali del sito {{ BUSINESS.name }} ai sensi del Regolamento UE 2016/679 (GDPR).{% endblock %}
 {% block head %}<meta name="robots" content="noindex">{% endblock %}
 {% block content %}
 <section class="section"><div class="wrap narrow prose">
-<h1>Informativa privacy</h1>
-<p><strong>Titolare del trattamento</strong>: {{ BUSINESS.owner }} – {{ BUSINESS.name }}{% if BUSINESS.vat %}, P.IVA {{ BUSINESS.vat }}{% endif %}. Email: {{ BUSINESS.email }}.</p>
-<h2>Quali dati raccogliamo</h2>
-<p>Il modulo «Prenota» invia nome, cognome, email, telefono, indirizzo di consegna e dettagli dell'ordine via email a {{ BUSINESS.booking_email }} tramite il servizio FormSubmit (formsubmit.co), che li inoltra senza conservarli per altri scopi. Il sito non ha un database e non salva dati.</p>
-<p> Il modulo prepara un messaggio che invii tu tramite WhatsApp o la tua email: riceviamo solo ciò che scegli di mandarci (nome, telefono, messaggio).</p>
-<h2>Perché</h2>
-<p>Per risponderti e prepararti un preventivo o un ordine (art. 6.1.b GDPR). Non li usiamo per pubblicità e non li cediamo a terzi.</p>
-<h2>Per quanto tempo</h2>
-<p>Per il tempo necessario a gestire la richiesta e, se diventa un ordine, per gli obblighi di legge.</p>
-<h2>I tuoi diritti</h2>
-<p>Puoi chiedere accesso, correzione o cancellazione dei tuoi dati scrivendo a {{ BUSINESS.email }}. Puoi anche rivolgerti al Garante per la protezione dei dati personali.</p>
+<h1>Privacy policy</h1>
+<p>Informativa ai sensi degli articoli 13 e 14 del Regolamento UE 2016/679 (GDPR) e del D.Lgs. 196/2003 come modificato dal D.Lgs. 101/2018. Ultimo aggiornamento: 9 novembre 2026.</p>
+
+<h2>1. Titolare del trattamento</h2>
+<p>{{ BUSINESS.iban_holder or BUSINESS.owner }}, titolare dell'attività «{{ BUSINESS.name }}»{% if BUSINESS.vat %}, P.IVA {{ BUSINESS.vat }}{% endif %}, con chioschi a Roma in {% for loc in LOCATIONS %}{{ loc.street }}{% if not loop.last %} e {% endif %}{% endfor %}.<br>
+Email: <a href="mailto:{{ BUSINESS.email }}">{{ BUSINESS.email }}</a> – Telefono: {{ BUSINESS.phone_display }}.</p>
+
+<h2>2. Quali dati trattiamo</h2>
+<ul>
+<li><strong>Dati che ci dai tu</strong> con il modulo «Prenota»: nome, cognome, email, telefono, indirizzo di consegna, data, dettagli dell'ordine e testo del biglietto.</li>
+<li><strong>Messaggi</strong> che ci invii tramite WhatsApp, email o telefono, anche dal modulo «Contatti» o «Preventivo» (che prepara il messaggio: sei tu a inviarlo).</li>
+<li><strong>Dati di pagamento</strong>: con bonifico riceviamo nome dell'ordinante e causale; con PayPal o carta i dati della carta li tratta solo PayPal, noi non li vediamo.</li>
+<li><strong>Dati di navigazione</strong>: come ogni sito, il server che lo ospita (GitHub Pages) registra in automatico l'indirizzo IP e i dati tecnici della visita, per sicurezza e funzionamento.</li>
+</ul>
+
+<h2>3. Perché li trattiamo e su quale base</h2>
+<ul>
+<li>Rispondere alle richieste, preparare preventivi, gestire prenotazioni, consegne e pagamenti: esecuzione di un contratto o di misure precontrattuali (art. 6.1.b GDPR).</li>
+<li>Obblighi fiscali e contabili: obbligo di legge (art. 6.1.c).</li>
+<li>Sicurezza del sito: legittimo interesse (art. 6.1.f).</li>
+{% if config.GOOGLE_TAG_ID %}<li>Misurare le visite e le chiamate arrivate dagli annunci Google: solo con il tuo consenso (art. 6.1.a), revocabile in ogni momento.</li>{% endif %}
+</ul>
+<p>Non usiamo i tuoi dati per inviarti pubblicità senza il tuo consenso, non li vendiamo e non facciamo profilazione.</p>
+
+<h2>4. A chi li comunichiamo</h2>
+<p>Solo ai fornitori che ci servono per il servizio, che agiscono come responsabili del trattamento o titolari autonomi:</p>
+<ul>
+<li><strong>FormSubmit</strong> (formsubmit.co): inoltra via email le prenotazioni del sito.</li>
+<li><strong>Google</strong> (Gmail{% if config.GOOGLE_TAG_ID %}, Google Ads{% endif %}, Google Maps se apri la mappa).</li>
+<li><strong>WhatsApp / Meta</strong>, se ci scrivi su WhatsApp.</li>
+<li><strong>PayPal</strong>, se paghi con PayPal o carta.</li>
+<li><strong>GitHub</strong> (Microsoft), che ospita il sito.</li>
+<li>Il corriere o il collaboratore che effettua la consegna (solo nome, indirizzo e telefono del destinatario).</li>
+<li>Il commercialista, per gli obblighi fiscali.</li>
+</ul>
+<p>Alcuni di questi fornitori hanno sede negli Stati Uniti. Il trasferimento avviene sulla base del EU-US Data Privacy Framework o delle clausole contrattuali standard della Commissione europea.</p>
+
+<h2>5. Per quanto tempo li conserviamo</h2>
+<ul>
+<li>Richieste che non diventano ordini: al massimo 12 mesi.</li>
+<li>Ordini e pagamenti: 10 anni, come richiesto dalla legge fiscale.</li>
+<li>Dati tecnici di navigazione: secondo i tempi del fornitore di hosting.</li>
+</ul>
+
+<h2>6. I tuoi diritti</h2>
+<p>Puoi chiedere in qualsiasi momento di accedere ai tuoi dati, correggerli, cancellarli, limitarne il trattamento, riceverli in formato portabile, opporti al trattamento e revocare il consenso dato (artt. 15–22 GDPR). Basta scrivere a <a href="mailto:{{ BUSINESS.email }}">{{ BUSINESS.email }}</a>: rispondiamo entro 30 giorni.</p>
+<p>Se ritieni che il trattamento violi il GDPR puoi presentare reclamo al <strong>Garante per la protezione dei dati personali</strong> (garanteprivacy.it).</p>
+
+<h2>7. Obbligatorietà</h2>
+<p>Per prenotare o ricevere una consegna servono nome, contatto e indirizzo: senza questi dati non possiamo evadere l'ordine. Gli altri campi sono facoltativi.</p>
+
+<h2>8. Minori</h2>
+<p>Il servizio è rivolto a maggiorenni. Non raccogliamo consapevolmente dati di minori di 14 anni.</p>
+
+<p>Per i cookie leggi la <a href="{{ url_for('main.cookies') }}">cookie policy</a>.</p>
 </div></section>
 {% endblock %}

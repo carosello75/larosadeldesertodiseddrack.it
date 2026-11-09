@@ -69,6 +69,7 @@
     <textarea id="f-msg" name="messaggio" rows="5" required maxlength="1500"></textarea>
     <p class="err" hidden>Descrivi in poche parole cosa ti serve.</p>
   </div>
+  <div class="field check"><label><input type="checkbox" id="f-privacy" required> <span>Ho letto la <a href="{{ url_for('main.privacy') }}">privacy policy</a> e accetto che i miei dati siano usati per rispondere alla richiesta.</span></label><p class="err" hidden>Serve il consenso per inviare la richiesta.</p></div>
   <div class="form-send">
     <button class="btn btn-rose btn-big" type="submit" value="whatsapp">Invia su WhatsApp</button>
     <button class="btn btn-light btn-big" type="submit" value="email">Invia per email</button>

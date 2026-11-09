@@ -1,21 +1,43 @@
 {% extends "base.html" %}
 {% block title %}Cookie policy | {{ BUSINESS.short_name }}{% endblock %}
+{% block description %}Quali cookie e strumenti usa il sito {{ BUSINESS.name }} e come cambiare le tue preferenze.{% endblock %}
 {% block head %}<meta name="robots" content="noindex">{% endblock %}
 {% block content %}
 <section class="section"><div class="wrap narrow prose">
 <h1>Cookie policy</h1>
-<p>Questo sito non usa cookie di profilazione propri e non installa cookie finché non lo chiedi tu.</p>
-<h2>Servizi di terze parti caricati solo su richiesta</h2>
+<p>Questa pagina spiega quali cookie e strumenti simili usa il sito, secondo il GDPR, l'art. 122 del Codice privacy e le Linee guida cookie del Garante (10 giugno 2021). Ultimo aggiornamento: 9 novembre 2026.</p>
+
+<p><button class="btn btn-rose" type="button" data-consent-reset>Cambia le tue preferenze cookie</button></p>
+
+<h2>1. Strumenti tecnici (sempre attivi, non serve consenso)</h2>
+<p>Il sito non usa cookie propri di profilazione. Salva nel tuo browser (localStorage) solo alcune piccole informazioni tecniche, che non vengono inviate a nessuno:</p>
+<table class="ctable">
+<thead><tr><th>Nome</th><th>A cosa serve</th><th>Durata</th></tr></thead>
+<tbody>
+<tr><td>consenso-v2</td><td>Ricorda la tua scelta sui cookie</td><td>6 mesi</td></tr>
+<tr><td>installa-chiuso</td><td>Non riproporre l'avviso «Installa la app»</td><td>14 giorni</td></tr>
+<tr><td>promo-chiuso</td><td>Non riproporre l'avviso «Prenota ora»</td><td>3 giorni</td></tr>
+<tr><td>Cache dell'app</td><td>Fa aprire il sito più veloce e anche offline</td><td>Fino alla prossima versione</td></tr>
+</tbody>
+</table>
+
+<h2>2. Contenuti di terze parti caricati solo se li apri tu</h2>
 <ul>
-<li><strong>Google Maps</strong>: la mappa si carica solo quando premi «Mostra la mappa». Da quel momento Google può impostare i propri cookie.</li>
-<li><strong>PayPal</strong>: il modulo di pagamento con carta si carica solo quando premi il relativo pulsante.</li>
-<li><strong>WhatsApp</strong>: i link aprono WhatsApp, che ha la sua informativa.</li>
+<li><strong>Google Maps</strong>: la mappa si carica solo quando premi «Mostra la mappa». Da quel momento Google può usare i propri cookie (<a href="https://policies.google.com/privacy" rel="noopener" target="_blank">privacy di Google</a>).</li>
+<li><strong>PayPal</strong>: il pagamento con carta si carica solo quando premi il pulsante (<a href="https://www.paypal.com/it/legalhub/privacy-full" rel="noopener" target="_blank">privacy di PayPal</a>).</li>
+<li><strong>WhatsApp</strong>: i link aprono l'app WhatsApp, che ha la sua informativa.</li>
 </ul>
+
+<h2>3. Cookie di misurazione degli annunci (solo con consenso)</h2>
 {% if config.GOOGLE_TAG_ID %}
-<h2>Misurazione degli annunci</h2>
-<p>Se accetti dal banner, usiamo Google Ads/Analytics per sapere quante chiamate e visite arrivano dagli annunci. Se rifiuti, Google riceve solo segnali anonimi senza cookie (modalità di consenso).</p>
-<p><button class="btn btn-light" type="button" data-consent-reset>Cambia la tua scelta</button></p>
+<p>Se premi «Accetta», usiamo Google Ads per sapere quante visite e chiamate arrivano dagli annunci. Se rifiuti o chiudi il banner, questi cookie non vengono installati e Google riceve solo segnali anonimi (modalità di consenso v2).</p>
+{% else %}
+<p>Al momento non sono attivi. Se in futuro useremo Google Ads o Google Analytics, li attiveremo solo dopo il tuo consenso dal banner.</p>
 {% endif %}
-<p>Titolare: {{ BUSINESS.owner }}, {{ BUSINESS.email }}.</p>
+
+<h2>4. Come cambiare scelta</h2>
+<p>Puoi cambiare idea quando vuoi con il pulsante in alto o con «Preferenze cookie» in fondo a ogni pagina. Puoi anche cancellare i dati del sito dalle impostazioni del tuo browser.</p>
+
+<p>Titolare: {{ BUSINESS.iban_holder or BUSINESS.owner }} – <a href="mailto:{{ BUSINESS.email }}">{{ BUSINESS.email }}</a>. Per tutti i dettagli leggi la <a href="{{ url_for('main.privacy') }}">privacy policy</a>.</p>
 </div></section>
 {% endblock %}

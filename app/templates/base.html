@@ -24,7 +24,7 @@
 <meta name="apple-mobile-web-app-title" content="Fiori Seddrak">
 <link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
 <link rel="preload" href="{{ url_for('static', filename='fonts/bricolage.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}?v=4">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}?v=5">
 {{ jsonld(local_business_jsonld()) }}
 {% block head %}{% endblock %}
 {% if config.GOOGLE_TAG_ID %}
@@ -82,7 +82,8 @@
       <p><a href="https://wa.me/{{ BUSINESS.whatsapp }}" rel="noopener">WhatsApp</a><br>
          <a href="mailto:{{ BUSINESS.email }}">{{ BUSINESS.email }}</a></p>
       <p><a href="{{ url_for('main.payment') }}">Pagamento online</a><br>
-         <a href="{{ url_for('main.privacy') }}">Privacy</a> e <a href="{{ url_for('main.cookies') }}">cookie</a></p>
+         <a href="{{ url_for('main.privacy') }}">Privacy policy</a> · <a href="{{ url_for('main.cookies') }}">Cookie policy</a><br>
+         <button class="linkbtn" type="button" data-consent-reset>Preferenze cookie</button></p>
     </div>
   </div>
   <div class="wrap footer-legal">
@@ -99,12 +100,12 @@
   <a class="callbar-btn callbar-wa" href="https://wa.me/{{ BUSINESS.whatsapp }}" rel="noopener" data-wa="bar">WhatsApp</a>
 </div>
 
-{% if config.GOOGLE_TAG_ID %}
-<div class="consent" id="consenso" hidden>
-  <p>Usiamo cookie di Google per misurare le chiamate e le visite arrivate dagli annunci. <a href="{{ url_for('main.cookies') }}">Dettagli</a></p>
-  <div><button class="btn btn-ghost" data-consent="no">Rifiuta</button> <button class="btn btn-rose" data-consent="si">Accetta</button></div>
+<div class="consent" id="consenso" hidden role="dialog" aria-labelledby="consenso-t">
+  <button class="consent-x" type="button" data-consent="no" aria-label="Chiudi e rifiuta">×</button>
+  <p class="consent-t" id="consenso-t"><strong>Rispettiamo la tua privacy</strong></p>
+  <p>Usiamo solo strumenti tecnici necessari al sito.{% if config.GOOGLE_TAG_ID %} Con il tuo consenso usiamo anche cookie di Google per misurare le visite e le chiamate arrivate dagli annunci.{% endif %} Mappe e pagamento PayPal si caricano solo se li apri tu. Leggi la <a href="{{ url_for('main.privacy') }}">privacy policy</a> e la <a href="{{ url_for('main.cookies') }}">cookie policy</a>.</p>
+  <div class="consent-btns"><button class="btn btn-light" type="button" data-consent="no">Rifiuta</button> <a class="btn btn-ghost" href="{{ url_for('main.cookies') }}">Personalizza</a> <button class="btn btn-rose" type="button" data-consent="si">Accetta</button></div>
 </div>
-{% endif %}
 <div class="install" id="installa" hidden role="dialog" aria-labelledby="installa-t">
   <img src="{{ url_for('static', filename='icon-192.png') }}" alt="" width="48" height="48">
   <div class="install-text">
@@ -125,6 +126,6 @@
   <a class="btn btn-rose" href="{{ url_for('main.booking') }}" data-promo-go>Prenota ora!</a>
 </div>
 {% endif %}
-<script src="{{ url_for('static', filename='js/site.js') }}?v=4" defer></script>
+<script src="{{ url_for('static', filename='js/site.js') }}?v=5" defer></script>
 </body>
 </html>
