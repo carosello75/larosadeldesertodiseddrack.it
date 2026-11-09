@@ -63,6 +63,7 @@ def local_business_jsonld():
         "url": site + "/",
         "logo": site + url_for("static", filename="logo.svg"),
         "email": BUSINESS["email"],
+        **({"vatID": "IT" + BUSINESS["vat"]} if BUSINESS.get("vat") else {}),
         "telephone": BUSINESS["phone"],
         "founder": {"@type": "Person", "name": BUSINESS["owner"]},
         "sameAs": BUSINESS["same_as"],

@@ -28,7 +28,7 @@ BUSINESS = {
     "paypal_hosted_button_id": "76SMRDR9BKQWU",
     "paypal_client_id": "BAAPEBcaQi82YaRMhulgfxE_89qZ-N_GihtTCFIxw_ZjoksiWKvKjo-OyFdGEwFdoeSNEeDfb7sQOWao5A",
     # Obbligatoria per legge sui siti di attività italiane: inseriscila quando disponibile.
-    "vat": "",
+    "vat": "11580811005",
     # Link ai profili ufficiali (Google Business, Instagram, Facebook): aiutano Google a
     # distinguere QUESTA attività dagli omonimi. Aggiungili appena creati.
     "same_as": [],
