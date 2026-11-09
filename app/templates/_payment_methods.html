@@ -1,14 +1,33 @@
 <div class="paymethods">
   {% if BUSINESS.iban %}
-  <div class="paybox">
+  <div class="paybox paybox-iban">
     <h3>Bonifico bancario</h3>
-    <dl class="iban">
-      <dt>Intestatario</dt><dd>{{ BUSINESS.iban_holder }}</dd>
-      <dt>IBAN</dt><dd><span class="iban-code" id="iban">{{ BUSINESS.iban }}</span> <button class="btn btn-light btn-sm" type="button" data-copy="#iban">Copia</button></dd>
-      {% if BUSINESS.bank_name %}<dt>Banca</dt><dd>{{ BUSINESS.bank_name }}</dd>{% endif %}
-      <dt>Causale</dt><dd>Fiori, il tuo nome e la data di consegna</dd>
-    </dl>
-    <p class="form-hint">Dopo il bonifico mandaci la ricevuta su WhatsApp: confermiamo subito l'ordine.</p>
+    <p class="iban-card-lead">Copia i dati con un tocco e incollali nell'app della tua banca.</p>
+    <div class="iban-card">
+      <div class="iban-row">
+        <span class="iban-label">IBAN</span>
+        <span class="iban-code" id="iban">{{ BUSINESS.iban }}</span>
+        <button class="btn btn-rose btn-sm" type="button" data-copy="#iban" data-copied="IBAN copiato! Ora aprilo nell'app della tua banca.">Copia IBAN</button>
+      </div>
+      <div class="iban-row">
+        <span class="iban-label">Intestatario</span>
+        <span id="iban-holder">{{ BUSINESS.iban_holder }}</span>
+        <button class="btn btn-light btn-sm" type="button" data-copy="#iban-holder" data-keep-spaces>Copia</button>
+      </div>
+      {% if BUSINESS.bank_name %}<div class="iban-row"><span class="iban-label">Banca</span><span>{{ BUSINESS.bank_name }}</span></div>{% endif %}
+      <div class="iban-row">
+        <span class="iban-label">Causale</span>
+        <span id="iban-causale">Fiori – nome e data di consegna</span>
+        <button class="btn btn-light btn-sm" type="button" data-copy="#iban-causale" data-keep-spaces>Copia</button>
+      </div>
+      <button class="btn btn-ghost btn-sm iban-share" type="button" data-share-iban hidden
+        data-text="Bonifico a {{ BUSINESS.name }}&#10;Intestatario: {{ BUSINESS.iban_holder }}&#10;IBAN: {{ BUSINESS.iban|replace(' ', '') }}&#10;Banca: {{ BUSINESS.bank_name }}&#10;Causale: Fiori – nome e data di consegna">Invia i dati al telefono</button>
+    </div>
+    <div class="iban-speed">
+      <div><strong>⚡ Bonifico istantaneo</strong><span>Arriva in pochi secondi, anche nei festivi. Ideale per consegne oggi o domani. Di solito costa come un bonifico normale.</span></div>
+      <div><strong>🕑 Bonifico ordinario</strong><span>Arriva in 1–2 giorni lavorativi. Va bene se la consegna è tra qualche giorno.</span></div>
+    </div>
+    <p class="form-hint">Dopo il bonifico mandaci la ricevuta su <a href="https://wa.me/{{ BUSINESS.whatsapp }}" rel="noopener" target="_blank">WhatsApp</a>: confermiamo subito l'ordine.</p>
   </div>
   {% endif %}
   <div class="paybox">

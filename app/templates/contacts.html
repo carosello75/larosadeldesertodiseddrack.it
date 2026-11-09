@@ -18,4 +18,24 @@
     </div>
   </div>
 </section>
+<section class="section section-tight section-sage" id="prenota-consegna">
+  <div class="wrap two">
+    <div>
+      <h2>Prenota la consegna</h2>
+      <p class="hero-lead">Scegli il giorno sul calendario e premi <strong>Prenota ora!</strong> In 5 minuti compili la prenotazione e Youssef ti conferma ordine e prezzo.</p>
+      <ul class="ticks">
+        <li>Consegna a domicilio a Roma Sud o ritiro al chiosco</li>
+        <li>Ricevuta via email e conferma su WhatsApp</li>
+        <li>Paghi solo dopo la conferma: bonifico, PayPal o al chiosco</li>
+      </ul>
+    </div>
+    <div>{{ m.booking_calendar() }}</div>
+  </div>
+</section>
+<section class="section section-tight">
+  <div class="wrap narrow">
+    <h2>Come pagare</h2>
+    {% include "_payment_methods.html" %}
+  </div>
+</section>
 {% endblock %}

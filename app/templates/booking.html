@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "_macros.html" as m with context %}
 {% block title %}Prenota i tuoi fiori online a Roma | {{ BUSINESS.short_name }}{% endblock %}
 {% block description %}Prenota fiori e piante online in 5 minuti: scegli la data, consegna a domicilio a Roma o ritiro al chiosco. Conferma da Youssef Seddrak.{% endblock %}
 {% block content %}
@@ -48,6 +49,7 @@
 
       <fieldset>
         <legend>Quando</legend>
+        {{ m.booking_calendar('#b-data') }}
         <div class="field-row">
           <div class="field"><label for="b-data">Giorno</label><input id="b-data" name="Data" type="date" required><p class="err" hidden>Scegli il giorno.</p></div>
           <div class="field"><label for="b-fascia">Fascia oraria</label>
@@ -75,6 +77,8 @@
     <div class="sent" id="prenota-ok" hidden tabindex="-1">
       <h2>Prenotazione inviata</h2>
       <p>Grazie! Youssef ha ricevuto la prenotazione e ti contatterà per confermare. Ti abbiamo mandato una ricevuta per email.</p>
+      <p class="h-small">Segnalo sul calendario del telefono:</p>
+      <p class="addcal"><a class="btn btn-light" id="cal-google" href="#" rel="noopener" target="_blank">Google Calendar</a> <a class="btn btn-light" id="cal-ics" href="#" download="consegna-fiori.ics">Apple / Outlook (.ics)</a></p>
       <p><a class="btn btn-green" id="prenota-wa" href="https://wa.me/{{ BUSINESS.whatsapp }}" rel="noopener" target="_blank">Vuoi una risposta più veloce? Scrivi su WhatsApp</a></p>
       <h2 class="h-small">Come pagare</h2>
       {% include "_payment_methods.html" %}

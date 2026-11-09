@@ -77,3 +77,18 @@
 </form>
 <noscript><p class="alt-contact">Scrivici su <a href="https://wa.me/{{ BUSINESS.whatsapp }}">WhatsApp</a> o a <a href="mailto:{{ BUSINESS.email }}">{{ BUSINESS.email }}</a>.</p></noscript>
 {% endmacro %}
+
+{% macro booking_calendar(target='') %}
+<div class="cal" data-cal data-book="{{ url_for('main.booking') }}"{% if target %} data-target="{{ target }}"{% endif %}>
+  <div class="cal-head">
+    <button type="button" class="cal-nav" data-cal-prev aria-label="Mese precedente">‹</button>
+    <p class="cal-month" aria-live="polite"></p>
+    <button type="button" class="cal-nav" data-cal-next aria-label="Mese successivo">›</button>
+  </div>
+  <div class="cal-grid" role="grid" aria-label="Scegli il giorno della consegna"></div>
+  {% if not target %}
+  <p class="cal-pick">Tocca un giorno per scegliere la consegna.</p>
+  <a class="btn btn-rose btn-big cal-go" href="{{ url_for('main.booking') }}" data-cal-go>Prenota ora!</a>
+  {% endif %}
+</div>
+{% endmacro %}
