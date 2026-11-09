@@ -24,7 +24,7 @@
 <meta name="apple-mobile-web-app-title" content="Fiori Seddrak">
 <link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
 <link rel="preload" href="{{ url_for('static', filename='fonts/bricolage.woff2') }}" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}?v=3">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}?v=4">
 {{ jsonld(local_business_jsonld()) }}
 {% block head %}{% endblock %}
 {% if config.GOOGLE_TAG_ID %}
@@ -125,6 +125,6 @@
   <a class="btn btn-rose" href="{{ url_for('main.booking') }}" data-promo-go>Prenota ora!</a>
 </div>
 {% endif %}
-<script src="{{ url_for('static', filename='js/site.js') }}?v=3" defer></script>
+<script src="{{ url_for('static', filename='js/site.js') }}?v=4" defer></script>
 </body>
 </html>
